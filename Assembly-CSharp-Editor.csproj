@@ -691,6 +691,14 @@
       <Project>{445F567B-DEA0-11A7-1B15-F5C3E45931DA}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="SuperTiled2UnityEditor.csproj">
+      <Project>{F91A4A24-C20D-E8C9-231C-15DD9D73DAAE}</Project>
+      <Name>SuperTiled2UnityEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SuperTiled2Unity.csproj">
+      <Project>{43EB9DDB-8F5F-E6CF-F3ED-90D8075769E9}</Project>
+      <Name>SuperTiled2Unity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
