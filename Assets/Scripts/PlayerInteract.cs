@@ -10,7 +10,7 @@ public class PlayerInteract : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Action") && currentInterObj)
+        if(Input.GetButtonDown("Cancel") && currentInterObj)
         {
             //Do something with the object
             Debug.Log("Looks like a placeholder object.");

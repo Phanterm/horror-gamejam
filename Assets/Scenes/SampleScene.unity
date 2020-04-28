@@ -275,7 +275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab20a4b50be992249bf4fa1a6d575d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.25
+  walkSpeed: 0.25
+  sprintSpeed: 0.5
+  _sprintInterval: 5
 --- !u!82 &52972085
 AudioSource:
   m_ObjectHideFlags: 0
@@ -384,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4950d5e35e39dd745a53c4be464e63b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
