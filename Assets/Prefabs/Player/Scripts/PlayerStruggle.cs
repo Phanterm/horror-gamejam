@@ -5,14 +5,15 @@ using UnityEngine;
 public class PlayerStruggle : MonoBehaviour
 {
     //Gets targets damage function
-    public PlayerHealth entity = null;
+    public PlayerMain entity = null;
+    private GameObject Player;
     public bool TriggeredByKeypress = false;
 
 void OnTriggerStay2D(Collider2D entity) 
 
 {
     //Gets player health (other)
-    PlayerHealth other = entity.GetComponent<PlayerHealth>();
+    PlayerMain other = entity.GetComponent<PlayerMain>();
 
     if (TriggeredByKeypress == true)
     {
@@ -24,12 +25,8 @@ void OnTriggerStay2D(Collider2D entity)
     else if (!TriggeredByKeypress)
     {
         Debug.Log("DyingSounds");  
+        other.TakeDamage(10);
     }
 }
 
-    // Update is called once per frame
-    void Update()
-    {
-    
-    }
 }

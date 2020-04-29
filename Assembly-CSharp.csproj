@@ -53,10 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Prefabs\Player\Scripts\HealthDamage.cs" />
-     <Compile Include="Assets\Prefabs\Player\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Prefabs\Player\Scripts\PlayerInteract.cs" />
-     <Compile Include="Assets\Prefabs\Player\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Prefabs\Player\Scripts\PlayerMain.cs" />
      <Compile Include="Assets\Prefabs\Player\Scripts\PlayerStruggle.cs" />
      <Compile Include="Assets\Scripts\InteractionObject.cs" />
      <Compile Include="Assets\Utilities\GGEZ\PerfectPixelCamera\Demo\Assets\ZoomDemo.cs" />
