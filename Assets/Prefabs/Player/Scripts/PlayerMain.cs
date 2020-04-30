@@ -14,6 +14,8 @@ public class PlayerMain : MonoBehaviour
     private Rigidbody2D _rigidBody;
     private Vector3 _change;
     private Animator _animator;
+    [SerializeField]
+    private Animator _healthAnimator;
     private AudioSource _audio;
     private SpriteRenderer _spriteRenderer;
 
@@ -37,6 +39,8 @@ public class PlayerMain : MonoBehaviour
 
         health = 100;
         _currentHealth = health;
+        _healthAnimator.Play("HealthTree");
+        _healthAnimator.SetFloat("healthReading", 100);
     }
 
     // Update is called once per frame
