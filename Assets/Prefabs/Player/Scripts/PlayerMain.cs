@@ -10,6 +10,7 @@ public class PlayerMain : MonoBehaviour
 
     public float walkSpeed;
     public float sprintSpeed;
+    public bool playerIsImmobile = false;
     private Rigidbody2D _rigidBody;
     private Vector3 _change;
     private Animator _animator;
@@ -19,7 +20,11 @@ public class PlayerMain : MonoBehaviour
     //PlayerHealth
     public float healthBar;
     public float health;
-    private float currentHealth; 
+    protected float _currentHealth;
+
+    //StruggleEvents
+    public int strugglePressed = 0;
+    public bool inStruggleEvent = false;
 
 
     // Start is called before the first frame update
@@ -31,23 +36,32 @@ public class PlayerMain : MonoBehaviour
         _spriteRenderer = GetComponent <SpriteRenderer>();
 
         health = 100;
-        currentHealth = health;
+        _currentHealth = health;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _change = Vector3.zero;
-        _change.x = Input.GetAxisRaw("Horizontal");
-        _change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
-        if (_change.x < 0)
+        if (!playerIsImmobile)
         {
-            _spriteRenderer.flipX = true;
+            _change = Vector3.zero;
+            _change.x = Input.GetAxisRaw("Horizontal");
+            _change.y = Input.GetAxisRaw("Vertical");
+            UpdateAnimationAndMove();
+            if (_change.x < 0)
+            {
+                _spriteRenderer.flipX = true;
+            }
+            else if (_change.x > 0)
+            {
+                _spriteRenderer.flipX = false;
+            }
         }
-        else if(_change.x > 0)
+
+        if (Input.GetButtonDown("Action") && inStruggleEvent == true)
         {
-            _spriteRenderer.flipX = false;
+            strugglePressed++;
+            //Debug.Log(strugglePressed);
         }
     }
 
@@ -89,13 +103,42 @@ public class PlayerMain : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        healthBar = currentHealth; 
+        _currentHealth -= damage;
+        healthBar = _currentHealth; 
         
-    if(currentHealth <= 0)
+    if(_currentHealth <= 0)
         {
             Debug.Log("You're Dead!");  
-            currentHealth = 0;
+            _currentHealth = 0;
+        }
+    }
+    public void TakeDamageOverTime(int damageAmount)
+    {
+        StartCoroutine(TakeDamageOverTimeCo(damageAmount));
+    }
+
+    /*public IEnumerator TakeDamageOverTimeCo(int damageAmount, float duration)
+    {
+        float amountDamaged = 0;
+        float damagePerLoop = damageAmount / duration;
+        while (amountDamaged < damageAmount)
+        {
+            health -= damagePerLoop;
+            Debug.Log(health.ToString());
+            amountDamaged += damagePerLoop;
+            yield return new WaitForSeconds(5f);
+        }
+    }*/
+
+    public IEnumerator TakeDamageOverTimeCo(int damageAmount)
+    {
+        inStruggleEvent = true;
+        playerIsImmobile = true;
+        while (strugglePressed < 25 && inStruggleEvent == true) //While the player has not yet pressed the struggle button enough times...
+        {
+            health -= damageAmount; //...take damage every loop in...
+            Debug.Log($"{health.ToString()} {inStruggleEvent}");
+            yield return new WaitForSeconds(0.25f); //...the amount of time between repeating loops.
         }
     }
 }
