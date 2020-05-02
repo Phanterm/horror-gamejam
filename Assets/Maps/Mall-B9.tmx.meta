@@ -11,8 +11,12 @@ ScriptedImporter:
     100012: _MapPrfab/Mall-B9/Grid/Collision/Object_4
     100014: _MapPrfab/Mall-B9/Grid/Floor
     100016: _MapPrfab/Mall-B9/Grid/Floor 2
-    100018: _MapPrfab/Mall-B9/Grid/Wall
-    100020: _MapPrfab/Mall-B9/Grid/Wall 2
+    100018: _MapPrfab/Mall-B9/Grid/Objects
+    100020: _MapPrfab/Mall-B9/Grid/Triggers
+    100022: _MapPrfab/Mall-B9/Grid/Triggers/Object_5
+    100024: _MapPrfab/Mall-B9/Grid/Triggers/Object_6
+    100026: _MapPrfab/Mall-B9/Grid/Wall
+    100028: _MapPrfab/Mall-B9/Grid/Wall 2
     400000: _MapPrfab/Mall-B9/Transform
     400002: _MapPrfab/Mall-B9/Grid/Transform
     400004: _MapPrfab/Mall-B9/Grid/Collision/Transform
@@ -22,12 +26,18 @@ ScriptedImporter:
     400012: _MapPrfab/Mall-B9/Grid/Collision/Object_4/Transform
     400014: _MapPrfab/Mall-B9/Grid/Floor/Transform
     400016: _MapPrfab/Mall-B9/Grid/Floor 2/Transform
-    400018: _MapPrfab/Mall-B9/Grid/Wall/Transform
-    400020: _MapPrfab/Mall-B9/Grid/Wall 2/Transform
+    400018: _MapPrfab/Mall-B9/Grid/Objects/Transform
+    400020: _MapPrfab/Mall-B9/Grid/Triggers/Transform
+    400022: _MapPrfab/Mall-B9/Grid/Triggers/Object_5/Transform
+    400024: _MapPrfab/Mall-B9/Grid/Triggers/Object_6/Transform
+    400026: _MapPrfab/Mall-B9/Grid/Wall/Transform
+    400028: _MapPrfab/Mall-B9/Grid/Wall 2/Transform
     6100000: _MapPrfab/Mall-B9/Grid/Collision/Object_1/BoxCollider2D
     6100002: _MapPrfab/Mall-B9/Grid/Collision/Object_2/BoxCollider2D
     6100004: _MapPrfab/Mall-B9/Grid/Collision/Object_3/BoxCollider2D
     6100006: _MapPrfab/Mall-B9/Grid/Collision/Object_4/BoxCollider2D
+    6100008: _MapPrfab/Mall-B9/Grid/Triggers/Object_5/BoxCollider2D
+    6100010: _MapPrfab/Mall-B9/Grid/Triggers/Object_6/BoxCollider2D
     11400000: _MapPrfab/Mall-B9/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/Mall-B9/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/Mall-B9/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
@@ -48,21 +58,33 @@ ScriptedImporter:
     11400034: _MapPrfab/Mall-B9/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400036: _MapPrfab/Mall-B9/Grid/Floor 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400038: _MapPrfab/Mall-B9/Grid/Floor 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400040: _MapPrfab/Mall-B9/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400042: _MapPrfab/Mall-B9/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400044: _MapPrfab/Mall-B9/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400046: _MapPrfab/Mall-B9/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400048: _superAsset
+    11400040: _MapPrfab/Mall-B9/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400042: _MapPrfab/Mall-B9/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400044: _MapPrfab/Mall-B9/Grid/Triggers/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400046: _MapPrfab/Mall-B9/Grid/Triggers/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400048: _MapPrfab/Mall-B9/Grid/Triggers/Object_5/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400050: _MapPrfab/Mall-B9/Grid/Triggers/Object_5/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400052: _MapPrfab/Mall-B9/Grid/Triggers/Object_5/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400054: _MapPrfab/Mall-B9/Grid/Triggers/Object_6/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400056: _MapPrfab/Mall-B9/Grid/Triggers/Object_6/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400058: _MapPrfab/Mall-B9/Grid/Triggers/Object_6/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400060: _MapPrfab/Mall-B9/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400062: _MapPrfab/Mall-B9/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400064: _MapPrfab/Mall-B9/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400066: _MapPrfab/Mall-B9/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400068: _superAsset
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/Mall-B9/Grid/Grid
     3664157343022684176: _MapPrfab/Mall-B9/Grid/Floor/TilemapRenderer
     3664157343022684178: _MapPrfab/Mall-B9/Grid/Floor 2/TilemapRenderer
-    3664157343022684180: _MapPrfab/Mall-B9/Grid/Wall/TilemapRenderer
-    3664157343022684182: _MapPrfab/Mall-B9/Grid/Wall 2/TilemapRenderer
+    3664157343022684180: _MapPrfab/Mall-B9/Grid/Objects/TilemapRenderer
+    3664157343022684182: _MapPrfab/Mall-B9/Grid/Wall/TilemapRenderer
+    3664157343022684184: _MapPrfab/Mall-B9/Grid/Wall 2/TilemapRenderer
     8195094279510102542: _MapPrfab/Mall-B9/Grid/Floor/Tilemap
     8195094279510102544: _MapPrfab/Mall-B9/Grid/Floor 2/Tilemap
-    8195094279510102546: _MapPrfab/Mall-B9/Grid/Wall/Tilemap
-    8195094279510102548: _MapPrfab/Mall-B9/Grid/Wall 2/Tilemap
+    8195094279510102546: _MapPrfab/Mall-B9/Grid/Objects/Tilemap
+    8195094279510102548: _MapPrfab/Mall-B9/Grid/Wall/Tilemap
+    8195094279510102550: _MapPrfab/Mall-B9/Grid/Wall 2/Tilemap
   externalObjects: {}
   userData: 
   assetBundleName: 
