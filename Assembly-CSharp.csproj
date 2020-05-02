@@ -70,6 +70,7 @@
     <Compile Include="Assets\Prefabs\Player\Scripts\PlayerStruggle.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\InteractionObject.cs" />
+    <Compile Include="Assets\Scripts\RoomMovement.cs" />
     <Compile Include="Assets\Utilities\GGEZ\PerfectPixelCamera\Demo\Assets\ZoomDemo.cs" />
     <Compile Include="Assets\Utilities\GGEZ\PerfectPixelCamera\Scripts\PerfectPixelCamera.cs" />
     <None Include="Assets\Utilities\GGEZ\PerfectPixelCamera\README.txt" />
