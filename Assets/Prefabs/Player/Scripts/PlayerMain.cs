@@ -20,7 +20,7 @@ public class PlayerMain : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
 
     //PlayerHealth
-    public float healthBar;
+    private float healthBar;
     public float health;
     protected float _currentHealth;
 
