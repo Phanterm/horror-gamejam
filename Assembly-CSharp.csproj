@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\InteractionObject.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\RoomMovement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

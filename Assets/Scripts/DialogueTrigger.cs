@@ -11,8 +11,4 @@ public class DialogueTrigger : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
-    public void StartDialogue (DialogueManager dialogue)
-    {
-        Debug.Log("Starting conversation with" + dialogue.name);
-    }
 }
