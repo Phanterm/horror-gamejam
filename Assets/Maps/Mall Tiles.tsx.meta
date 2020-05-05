@@ -773,6 +773,86 @@ ScriptedImporter:
     11401534: Tile_mall-tiles_766
     11401536: Tile_mall-tiles_767
     11401538: Tile_mall-tiles_768
+    11401540: Tile_mall-tiles_769
+    11401542: Tile_mall-tiles_770
+    11401544: Tile_mall-tiles_771
+    11401546: Tile_mall-tiles_772
+    11401548: Tile_mall-tiles_773
+    11401550: Tile_mall-tiles_774
+    11401552: Tile_mall-tiles_775
+    11401554: Tile_mall-tiles_776
+    11401556: Tile_mall-tiles_777
+    11401558: Tile_mall-tiles_778
+    11401560: Tile_mall-tiles_779
+    11401562: Tile_mall-tiles_780
+    11401564: Tile_mall-tiles_781
+    11401566: Tile_mall-tiles_782
+    11401568: Tile_mall-tiles_783
+    11401570: Tile_mall-tiles_784
+    11401572: Tile_mall-tiles_785
+    11401574: Tile_mall-tiles_786
+    11401576: Tile_mall-tiles_787
+    11401578: Tile_mall-tiles_788
+    11401580: Tile_mall-tiles_789
+    11401582: Tile_mall-tiles_790
+    11401584: Tile_mall-tiles_791
+    11401586: Tile_mall-tiles_792
+    11401588: Tile_mall-tiles_793
+    11401590: Tile_mall-tiles_794
+    11401592: Tile_mall-tiles_795
+    11401594: Tile_mall-tiles_796
+    11401596: Tile_mall-tiles_797
+    11401598: Tile_mall-tiles_798
+    11401600: Tile_mall-tiles_799
+    11401602: Tile_mall-tiles_800
+    11401604: Tile_mall-tiles_801
+    11401606: Tile_mall-tiles_802
+    11401608: Tile_mall-tiles_803
+    11401610: Tile_mall-tiles_804
+    11401612: Tile_mall-tiles_805
+    11401614: Tile_mall-tiles_806
+    11401616: Tile_mall-tiles_807
+    11401618: Tile_mall-tiles_808
+    11401620: Tile_mall-tiles_809
+    11401622: Tile_mall-tiles_810
+    11401624: Tile_mall-tiles_811
+    11401626: Tile_mall-tiles_812
+    11401628: Tile_mall-tiles_813
+    11401630: Tile_mall-tiles_814
+    11401632: Tile_mall-tiles_815
+    11401634: Tile_mall-tiles_816
+    11401636: Tile_mall-tiles_817
+    11401638: Tile_mall-tiles_818
+    11401640: Tile_mall-tiles_819
+    11401642: Tile_mall-tiles_820
+    11401644: Tile_mall-tiles_821
+    11401646: Tile_mall-tiles_822
+    11401648: Tile_mall-tiles_823
+    11401650: Tile_mall-tiles_824
+    11401652: Tile_mall-tiles_825
+    11401654: Tile_mall-tiles_826
+    11401656: Tile_mall-tiles_827
+    11401658: Tile_mall-tiles_828
+    11401660: Tile_mall-tiles_829
+    11401662: Tile_mall-tiles_830
+    11401664: Tile_mall-tiles_831
+    11401666: Tile_mall-tiles_832
+    11401668: Tile_mall-tiles_833
+    11401670: Tile_mall-tiles_834
+    11401672: Tile_mall-tiles_835
+    11401674: Tile_mall-tiles_836
+    11401676: Tile_mall-tiles_837
+    11401678: Tile_mall-tiles_838
+    11401680: Tile_mall-tiles_839
+    11401682: Tile_mall-tiles_840
+    11401684: Tile_mall-tiles_841
+    11401686: Tile_mall-tiles_842
+    11401688: Tile_mall-tiles_843
+    11401690: Tile_mall-tiles_844
+    11401692: Tile_mall-tiles_845
+    11401694: Tile_mall-tiles_846
+    11401696: Tile_mall-tiles_847
+    11401698: Tile_mall-tiles_848
     21300000: Sprite_mall-tiles_1
     21300002: Sprite_mall-tiles_2
     21300004: Sprite_mall-tiles_3
@@ -1541,6 +1621,86 @@ ScriptedImporter:
     21301530: Sprite_mall-tiles_766
     21301532: Sprite_mall-tiles_767
     21301534: Sprite_mall-tiles_768
+    21301536: Sprite_mall-tiles_769
+    21301538: Sprite_mall-tiles_770
+    21301540: Sprite_mall-tiles_771
+    21301542: Sprite_mall-tiles_772
+    21301544: Sprite_mall-tiles_773
+    21301546: Sprite_mall-tiles_774
+    21301548: Sprite_mall-tiles_775
+    21301550: Sprite_mall-tiles_776
+    21301552: Sprite_mall-tiles_777
+    21301554: Sprite_mall-tiles_778
+    21301556: Sprite_mall-tiles_779
+    21301558: Sprite_mall-tiles_780
+    21301560: Sprite_mall-tiles_781
+    21301562: Sprite_mall-tiles_782
+    21301564: Sprite_mall-tiles_783
+    21301566: Sprite_mall-tiles_784
+    21301568: Sprite_mall-tiles_785
+    21301570: Sprite_mall-tiles_786
+    21301572: Sprite_mall-tiles_787
+    21301574: Sprite_mall-tiles_788
+    21301576: Sprite_mall-tiles_789
+    21301578: Sprite_mall-tiles_790
+    21301580: Sprite_mall-tiles_791
+    21301582: Sprite_mall-tiles_792
+    21301584: Sprite_mall-tiles_793
+    21301586: Sprite_mall-tiles_794
+    21301588: Sprite_mall-tiles_795
+    21301590: Sprite_mall-tiles_796
+    21301592: Sprite_mall-tiles_797
+    21301594: Sprite_mall-tiles_798
+    21301596: Sprite_mall-tiles_799
+    21301598: Sprite_mall-tiles_800
+    21301600: Sprite_mall-tiles_801
+    21301602: Sprite_mall-tiles_802
+    21301604: Sprite_mall-tiles_803
+    21301606: Sprite_mall-tiles_804
+    21301608: Sprite_mall-tiles_805
+    21301610: Sprite_mall-tiles_806
+    21301612: Sprite_mall-tiles_807
+    21301614: Sprite_mall-tiles_808
+    21301616: Sprite_mall-tiles_809
+    21301618: Sprite_mall-tiles_810
+    21301620: Sprite_mall-tiles_811
+    21301622: Sprite_mall-tiles_812
+    21301624: Sprite_mall-tiles_813
+    21301626: Sprite_mall-tiles_814
+    21301628: Sprite_mall-tiles_815
+    21301630: Sprite_mall-tiles_816
+    21301632: Sprite_mall-tiles_817
+    21301634: Sprite_mall-tiles_818
+    21301636: Sprite_mall-tiles_819
+    21301638: Sprite_mall-tiles_820
+    21301640: Sprite_mall-tiles_821
+    21301642: Sprite_mall-tiles_822
+    21301644: Sprite_mall-tiles_823
+    21301646: Sprite_mall-tiles_824
+    21301648: Sprite_mall-tiles_825
+    21301650: Sprite_mall-tiles_826
+    21301652: Sprite_mall-tiles_827
+    21301654: Sprite_mall-tiles_828
+    21301656: Sprite_mall-tiles_829
+    21301658: Sprite_mall-tiles_830
+    21301660: Sprite_mall-tiles_831
+    21301662: Sprite_mall-tiles_832
+    21301664: Sprite_mall-tiles_833
+    21301666: Sprite_mall-tiles_834
+    21301668: Sprite_mall-tiles_835
+    21301670: Sprite_mall-tiles_836
+    21301672: Sprite_mall-tiles_837
+    21301674: Sprite_mall-tiles_838
+    21301676: Sprite_mall-tiles_839
+    21301678: Sprite_mall-tiles_840
+    21301680: Sprite_mall-tiles_841
+    21301682: Sprite_mall-tiles_842
+    21301684: Sprite_mall-tiles_843
+    21301686: Sprite_mall-tiles_844
+    21301688: Sprite_mall-tiles_845
+    21301690: Sprite_mall-tiles_846
+    21301692: Sprite_mall-tiles_847
+    21301694: Sprite_mall-tiles_848
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -1555,7 +1715,7 @@ ScriptedImporter:
   importerVersion: 10
   pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 1539
+  numberOfObjectsImported: 1699
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048

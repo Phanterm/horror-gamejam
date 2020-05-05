@@ -1,0 +1,109 @@
+fileFormatVersion: 2
+guid: 12a51963127ffaa49911f7f122b59f99
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/Mall-C1
+    100002: _MapPrfab/Mall-C1/Grid
+    100004: _MapPrfab/Mall-C1/Grid/Collision
+    100006: _MapPrfab/Mall-C1/Grid/Collision/Object_1
+    100008: _MapPrfab/Mall-C1/Grid/Collision/Object_2
+    100010: _MapPrfab/Mall-C1/Grid/Collision/Object_4
+    100012: _MapPrfab/Mall-C1/Grid/Collision/Object_5
+    100014: _MapPrfab/Mall-C1/Grid/Collision/Object_6
+    100016: _MapPrfab/Mall-C1/Grid/Collision/Object_7
+    100018: _MapPrfab/Mall-C1/Grid/Collision/Object_8
+    100020: _MapPrfab/Mall-C1/Grid/Floor
+    100022: _MapPrfab/Mall-C1/Grid/Objects
+    100024: _MapPrfab/Mall-C1/Grid/Shadows
+    100026: _MapPrfab/Mall-C1/Grid/Wall
+    100028: _MapPrfab/Mall-C1/Grid/Wall 2
+    400000: _MapPrfab/Mall-C1/Transform
+    400002: _MapPrfab/Mall-C1/Grid/Transform
+    400004: _MapPrfab/Mall-C1/Grid/Collision/Transform
+    400006: _MapPrfab/Mall-C1/Grid/Collision/Object_1/Transform
+    400008: _MapPrfab/Mall-C1/Grid/Collision/Object_2/Transform
+    400010: _MapPrfab/Mall-C1/Grid/Collision/Object_4/Transform
+    400012: _MapPrfab/Mall-C1/Grid/Collision/Object_5/Transform
+    400014: _MapPrfab/Mall-C1/Grid/Collision/Object_6/Transform
+    400016: _MapPrfab/Mall-C1/Grid/Collision/Object_7/Transform
+    400018: _MapPrfab/Mall-C1/Grid/Collision/Object_8/Transform
+    400020: _MapPrfab/Mall-C1/Grid/Floor/Transform
+    400022: _MapPrfab/Mall-C1/Grid/Objects/Transform
+    400024: _MapPrfab/Mall-C1/Grid/Shadows/Transform
+    400026: _MapPrfab/Mall-C1/Grid/Wall/Transform
+    400028: _MapPrfab/Mall-C1/Grid/Wall 2/Transform
+    6100000: _MapPrfab/Mall-C1/Grid/Collision/Object_1/BoxCollider2D
+    6100002: _MapPrfab/Mall-C1/Grid/Collision/Object_2/BoxCollider2D
+    6100004: _MapPrfab/Mall-C1/Grid/Collision/Object_4/BoxCollider2D
+    6100006: _MapPrfab/Mall-C1/Grid/Collision/Object_5/BoxCollider2D
+    6100008: _MapPrfab/Mall-C1/Grid/Collision/Object_6/BoxCollider2D
+    6100010: _MapPrfab/Mall-C1/Grid/Collision/Object_7/BoxCollider2D
+    6100012: _MapPrfab/Mall-C1/Grid/Collision/Object_8/BoxCollider2D
+    11400000: _MapPrfab/Mall-C1/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/Mall-C1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/Mall-C1/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400006: _MapPrfab/Mall-C1/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/Mall-C1/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400010: _MapPrfab/Mall-C1/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400012: _MapPrfab/Mall-C1/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400014: _MapPrfab/Mall-C1/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400016: _MapPrfab/Mall-C1/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400018: _MapPrfab/Mall-C1/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/Mall-C1/Grid/Collision/Object_4/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400022: _MapPrfab/Mall-C1/Grid/Collision/Object_4/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400024: _MapPrfab/Mall-C1/Grid/Collision/Object_4/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400026: _MapPrfab/Mall-C1/Grid/Collision/Object_5/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400028: _MapPrfab/Mall-C1/Grid/Collision/Object_5/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400030: _MapPrfab/Mall-C1/Grid/Collision/Object_5/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400032: _MapPrfab/Mall-C1/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400034: _MapPrfab/Mall-C1/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400036: _MapPrfab/Mall-C1/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400038: _MapPrfab/Mall-C1/Grid/Collision/Object_7/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400040: _MapPrfab/Mall-C1/Grid/Collision/Object_7/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400042: _MapPrfab/Mall-C1/Grid/Collision/Object_7/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400044: _MapPrfab/Mall-C1/Grid/Collision/Object_8/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400046: _MapPrfab/Mall-C1/Grid/Collision/Object_8/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400048: _MapPrfab/Mall-C1/Grid/Collision/Object_8/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400050: _MapPrfab/Mall-C1/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400052: _MapPrfab/Mall-C1/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400054: _MapPrfab/Mall-C1/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400056: _MapPrfab/Mall-C1/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400058: _MapPrfab/Mall-C1/Grid/Shadows/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400060: _MapPrfab/Mall-C1/Grid/Shadows/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400062: _MapPrfab/Mall-C1/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400064: _MapPrfab/Mall-C1/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400066: _MapPrfab/Mall-C1/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400068: _MapPrfab/Mall-C1/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400070: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/Mall-C1/Grid/Grid
+    3664157343022684176: _MapPrfab/Mall-C1/Grid/Floor/TilemapRenderer
+    3664157343022684178: _MapPrfab/Mall-C1/Grid/Objects/TilemapRenderer
+    3664157343022684180: _MapPrfab/Mall-C1/Grid/Shadows/TilemapRenderer
+    3664157343022684182: _MapPrfab/Mall-C1/Grid/Wall/TilemapRenderer
+    3664157343022684184: _MapPrfab/Mall-C1/Grid/Wall 2/TilemapRenderer
+    8195094279510102542: _MapPrfab/Mall-C1/Grid/Floor/Tilemap
+    8195094279510102544: _MapPrfab/Mall-C1/Grid/Objects/Tilemap
+    8195094279510102546: _MapPrfab/Mall-C1/Grid/Shadows/Tilemap
+    8195094279510102548: _MapPrfab/Mall-C1/Grid/Wall/Tilemap
+    8195094279510102550: _MapPrfab/Mall-C1/Grid/Wall 2/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 1
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
