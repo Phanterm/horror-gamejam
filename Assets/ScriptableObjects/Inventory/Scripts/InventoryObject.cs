@@ -1,13 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using UnityEditor;
 
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 {
-
-    public ItemDatabaseObject database;
+    private ItemDatabaseObject database;
     public List<InventorySlot> Container = new List<InventorySlot>();
+
+    private void OnEnable() //Loads the database when the scriptable object is enabled.
+    {
+#if UNITY_EDITOR
+        database = (ItemDatabaseObject)AssetDatabase.LoadAssetAtPath("Assets/Resources/Database.asset", typeof(ItemDatabaseObject));
+#else
+        database = Resources.Load<ItemDatabaseObject>("Database");
+#endif
+    }
     public void AddItem(ItemObject _item, int _amount) //Adds the item to the inventory slot.
     {
         for (int i = 0; i < Container.Count; i++)
@@ -21,7 +32,27 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             Container.Add(new InventorySlot(database.GetId[_item], _item, _amount));
     }
 
+    public void SaveInventory()
+    {
+        string saveData = JsonUtility.ToJson(this, true);
+        BinaryFormatter bf = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/inventory.sav";
+        FileStream file = new FileStream(path, FileMode.Create);
+        bf.Serialize(file, saveData);
+        file.Close();
+    }
+    public void LoadInventory()
+    {
+        string path = Application.persistentDataPath + "/inventory.sav";
+        if (File.Exists(path))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
 
+            FileStream file = new FileStream(path, FileMode.Open);
+            JsonUtility.FromJsonOverwrite(bf.Deserialize(file).ToString(), this);
+            file.Close();
+        }
+    }
 
     public void OnAfterDeserialize() //On deserializing. 
     {
