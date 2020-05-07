@@ -7,11 +7,13 @@ public class RoomMovement : MonoBehaviour
     public Vector2 cameraShift;
     public Vector3 playerShift;
     private CameraMovement cam;
+    public RoomSettings targetRoom;
     
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main.GetComponent<CameraMovement>();
+        targetRoom = gameObject.GetComponent<RoomSettings>();
     }
 
     // Update is called once per frame
@@ -24,9 +26,16 @@ public class RoomMovement : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            cam.minPosition += cameraShift;
-            cam.maxPosition += cameraShift;
+            cam.MinPosition += cameraShift;
+            cam.MaxPosition += cameraShift;
             other.transform.position += playerShift;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+
         }
     }
 }

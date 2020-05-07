@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class PlayerMain : MonoBehaviour
 {
 
-    //PlayerMovement
-
+    #region PlayerMovement
     public float walkSpeed;
     public float sprintSpeed;
     public bool playerIsImmobile = false;
     private Rigidbody2D _rigidBody;
     private Vector3 _change;
     private Animator _animator;
+    #endregion
+
     [SerializeField]
     private Animator _healthAnimator;
     private AudioSource _audio;
@@ -28,6 +29,40 @@ public class PlayerMain : MonoBehaviour
     public int strugglePressed = 0;
     public bool inStruggleEvent = false;
 
+
+    //Player Inventory
+    public InventoryObject inventory;
+
+    public void OnTriggerEnter2D(Collider2D other) //When the player collides with an item they can pick up, add it to the inventory.
+    {
+        var item = other.GetComponent<Item>();
+        if (item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(other.gameObject);
+        }
+    }
+    private void OnApplicationQuit() //When we quit play, reset the inventory to empty.
+    {
+        inventory.Container.Clear();
+    }
+
+    //Save Data
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        health = data.health;
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
+    }
 
     // Start is called before the first frame update
     void Start()

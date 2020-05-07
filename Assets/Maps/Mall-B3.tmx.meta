@@ -1,0 +1,301 @@
+fileFormatVersion: 2
+guid: ab8caad54c04a97438f26edb2b91ee3a
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/Mall-B3
+    100002: _MapPrfab/Mall-B3/Grid
+    100004: _MapPrfab/Mall-B3/Grid/Background
+    100006: _MapPrfab/Mall-B3/Grid/Background 2
+    100008: _MapPrfab/Mall-B3/Grid/Background 3
+    100010: _MapPrfab/Mall-B3/Grid/Background 4
+    100012: _MapPrfab/Mall-B3/Grid/Collision
+    100014: _MapPrfab/Mall-B3/Grid/Collision/Object_1
+    100016: _MapPrfab/Mall-B3/Grid/Collision/Object_2
+    100018: _MapPrfab/Mall-B3/Grid/Collision/Object_3
+    100020: _MapPrfab/Mall-B3/Grid/Collision/Object_6
+    100022: _MapPrfab/Mall-B3/Grid/Collision/Object_8
+    100024: _MapPrfab/Mall-B3/Grid/Collision/Object_10
+    100026: _MapPrfab/Mall-B3/Grid/Collision/Object_12
+    100028: _MapPrfab/Mall-B3/Grid/Collision/Object_14
+    100030: _MapPrfab/Mall-B3/Grid/Collision/Object_15
+    100032: _MapPrfab/Mall-B3/Grid/Collision/Object_16
+    100034: _MapPrfab/Mall-B3/Grid/Collision/Object_18
+    100036: _MapPrfab/Mall-B3/Grid/Collision/Object_27
+    100038: _MapPrfab/Mall-B3/Grid/Collision/Object_28
+    100040: _MapPrfab/Mall-B3/Grid/Collision/Object_30
+    100042: _MapPrfab/Mall-B3/Grid/Collision/Object_31
+    100044: _MapPrfab/Mall-B3/Grid/Collision/Object_32
+    100046: _MapPrfab/Mall-B3/Grid/Collision/Object_33
+    100048: _MapPrfab/Mall-B3/Grid/Collision/Object_34
+    100050: _MapPrfab/Mall-B3/Grid/Collision/Object_35
+    100052: _MapPrfab/Mall-B3/Grid/Collision/Object_43
+    100054: _MapPrfab/Mall-B3/Grid/Collision/Object_44
+    100056: _MapPrfab/Mall-B3/Grid/Collision/Object_45
+    100058: _MapPrfab/Mall-B3/Grid/Collision/Object_46
+    100060: _MapPrfab/Mall-B3/Grid/Collision/Object_47
+    100062: _MapPrfab/Mall-B3/Grid/Collision/Object_48
+    100064: _MapPrfab/Mall-B3/Grid/Collision/Object_49
+    100066: _MapPrfab/Mall-B3/Grid/Collision/Object_50
+    100068: _MapPrfab/Mall-B3/Grid/Collision/Object_51
+    100070: _MapPrfab/Mall-B3/Grid/Collision/Object_53
+    100072: _MapPrfab/Mall-B3/Grid/Collision/Object_54
+    100074: _MapPrfab/Mall-B3/Grid/Collision/Object_55
+    100076: _MapPrfab/Mall-B3/Grid/Collision/Object_56
+    100078: _MapPrfab/Mall-B3/Grid/Collision/Object_57
+    100080: _MapPrfab/Mall-B3/Grid/Collision/Object_59
+    100082: _MapPrfab/Mall-B3/Grid/Collision/Object_62
+    100084: _MapPrfab/Mall-B3/Grid/Floor
+    100086: _MapPrfab/Mall-B3/Grid/Floor 2
+    100088: _MapPrfab/Mall-B3/Grid/Objects
+    100090: _MapPrfab/Mall-B3/Grid/Wall
+    100092: _MapPrfab/Mall-B3/Grid/Wall 2
+    400000: _MapPrfab/Mall-B3/Transform
+    400002: _MapPrfab/Mall-B3/Grid/Transform
+    400004: _MapPrfab/Mall-B3/Grid/Background/Transform
+    400006: _MapPrfab/Mall-B3/Grid/Background 2/Transform
+    400008: _MapPrfab/Mall-B3/Grid/Background 3/Transform
+    400010: _MapPrfab/Mall-B3/Grid/Background 4/Transform
+    400012: _MapPrfab/Mall-B3/Grid/Collision/Transform
+    400014: _MapPrfab/Mall-B3/Grid/Collision/Object_1/Transform
+    400016: _MapPrfab/Mall-B3/Grid/Collision/Object_2/Transform
+    400018: _MapPrfab/Mall-B3/Grid/Collision/Object_3/Transform
+    400020: _MapPrfab/Mall-B3/Grid/Collision/Object_6/Transform
+    400022: _MapPrfab/Mall-B3/Grid/Collision/Object_8/Transform
+    400024: _MapPrfab/Mall-B3/Grid/Collision/Object_10/Transform
+    400026: _MapPrfab/Mall-B3/Grid/Collision/Object_12/Transform
+    400028: _MapPrfab/Mall-B3/Grid/Collision/Object_14/Transform
+    400030: _MapPrfab/Mall-B3/Grid/Collision/Object_15/Transform
+    400032: _MapPrfab/Mall-B3/Grid/Collision/Object_16/Transform
+    400034: _MapPrfab/Mall-B3/Grid/Collision/Object_18/Transform
+    400036: _MapPrfab/Mall-B3/Grid/Collision/Object_27/Transform
+    400038: _MapPrfab/Mall-B3/Grid/Collision/Object_28/Transform
+    400040: _MapPrfab/Mall-B3/Grid/Collision/Object_30/Transform
+    400042: _MapPrfab/Mall-B3/Grid/Collision/Object_31/Transform
+    400044: _MapPrfab/Mall-B3/Grid/Collision/Object_32/Transform
+    400046: _MapPrfab/Mall-B3/Grid/Collision/Object_33/Transform
+    400048: _MapPrfab/Mall-B3/Grid/Collision/Object_34/Transform
+    400050: _MapPrfab/Mall-B3/Grid/Collision/Object_35/Transform
+    400052: _MapPrfab/Mall-B3/Grid/Collision/Object_43/Transform
+    400054: _MapPrfab/Mall-B3/Grid/Collision/Object_44/Transform
+    400056: _MapPrfab/Mall-B3/Grid/Collision/Object_45/Transform
+    400058: _MapPrfab/Mall-B3/Grid/Collision/Object_46/Transform
+    400060: _MapPrfab/Mall-B3/Grid/Collision/Object_47/Transform
+    400062: _MapPrfab/Mall-B3/Grid/Collision/Object_48/Transform
+    400064: _MapPrfab/Mall-B3/Grid/Collision/Object_49/Transform
+    400066: _MapPrfab/Mall-B3/Grid/Collision/Object_50/Transform
+    400068: _MapPrfab/Mall-B3/Grid/Collision/Object_51/Transform
+    400070: _MapPrfab/Mall-B3/Grid/Collision/Object_53/Transform
+    400072: _MapPrfab/Mall-B3/Grid/Collision/Object_54/Transform
+    400074: _MapPrfab/Mall-B3/Grid/Collision/Object_55/Transform
+    400076: _MapPrfab/Mall-B3/Grid/Collision/Object_56/Transform
+    400078: _MapPrfab/Mall-B3/Grid/Collision/Object_57/Transform
+    400080: _MapPrfab/Mall-B3/Grid/Collision/Object_59/Transform
+    400082: _MapPrfab/Mall-B3/Grid/Collision/Object_62/Transform
+    400084: _MapPrfab/Mall-B3/Grid/Floor/Transform
+    400086: _MapPrfab/Mall-B3/Grid/Floor 2/Transform
+    400088: _MapPrfab/Mall-B3/Grid/Objects/Transform
+    400090: _MapPrfab/Mall-B3/Grid/Wall/Transform
+    400092: _MapPrfab/Mall-B3/Grid/Wall 2/Transform
+    6000000: _MapPrfab/Mall-B3/Grid/Collision/Object_43/PolygonCollider2D
+    6000002: _MapPrfab/Mall-B3/Grid/Collision/Object_44/PolygonCollider2D
+    6000004: _MapPrfab/Mall-B3/Grid/Collision/Object_53/PolygonCollider2D
+    6000006: _MapPrfab/Mall-B3/Grid/Collision/Object_54/PolygonCollider2D
+    6000008: _MapPrfab/Mall-B3/Grid/Collision/Object_55/PolygonCollider2D
+    6000010: _MapPrfab/Mall-B3/Grid/Collision/Object_56/PolygonCollider2D
+    6000012: _MapPrfab/Mall-B3/Grid/Collision/Object_57/PolygonCollider2D
+    6000014: _MapPrfab/Mall-B3/Grid/Collision/Object_59/PolygonCollider2D
+    6000016: _MapPrfab/Mall-B3/Grid/Collision/Object_62/PolygonCollider2D
+    6100000: _MapPrfab/Mall-B3/Grid/Collision/Object_1/BoxCollider2D
+    6100002: _MapPrfab/Mall-B3/Grid/Collision/Object_2/BoxCollider2D
+    6100004: _MapPrfab/Mall-B3/Grid/Collision/Object_3/BoxCollider2D
+    6100006: _MapPrfab/Mall-B3/Grid/Collision/Object_6/BoxCollider2D
+    6100008: _MapPrfab/Mall-B3/Grid/Collision/Object_8/BoxCollider2D
+    6100010: _MapPrfab/Mall-B3/Grid/Collision/Object_10/BoxCollider2D
+    6100012: _MapPrfab/Mall-B3/Grid/Collision/Object_12/BoxCollider2D
+    6100014: _MapPrfab/Mall-B3/Grid/Collision/Object_14/BoxCollider2D
+    6100016: _MapPrfab/Mall-B3/Grid/Collision/Object_15/BoxCollider2D
+    6100018: _MapPrfab/Mall-B3/Grid/Collision/Object_16/BoxCollider2D
+    6100020: _MapPrfab/Mall-B3/Grid/Collision/Object_18/BoxCollider2D
+    6100022: _MapPrfab/Mall-B3/Grid/Collision/Object_27/BoxCollider2D
+    6100024: _MapPrfab/Mall-B3/Grid/Collision/Object_28/BoxCollider2D
+    6100026: _MapPrfab/Mall-B3/Grid/Collision/Object_30/BoxCollider2D
+    6100028: _MapPrfab/Mall-B3/Grid/Collision/Object_31/BoxCollider2D
+    6100030: _MapPrfab/Mall-B3/Grid/Collision/Object_32/BoxCollider2D
+    6100032: _MapPrfab/Mall-B3/Grid/Collision/Object_33/BoxCollider2D
+    6100034: _MapPrfab/Mall-B3/Grid/Collision/Object_34/BoxCollider2D
+    6100036: _MapPrfab/Mall-B3/Grid/Collision/Object_35/BoxCollider2D
+    6100038: _MapPrfab/Mall-B3/Grid/Collision/Object_45/BoxCollider2D
+    6100040: _MapPrfab/Mall-B3/Grid/Collision/Object_46/BoxCollider2D
+    6100042: _MapPrfab/Mall-B3/Grid/Collision/Object_47/BoxCollider2D
+    6100044: _MapPrfab/Mall-B3/Grid/Collision/Object_48/BoxCollider2D
+    6100046: _MapPrfab/Mall-B3/Grid/Collision/Object_49/BoxCollider2D
+    6100048: _MapPrfab/Mall-B3/Grid/Collision/Object_50/BoxCollider2D
+    6100050: _MapPrfab/Mall-B3/Grid/Collision/Object_51/BoxCollider2D
+    11400000: _MapPrfab/Mall-B3/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/Mall-B3/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/Mall-B3/Grid/Background/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/Mall-B3/Grid/Background/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/Mall-B3/Grid/Background 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400010: _MapPrfab/Mall-B3/Grid/Background 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400012: _MapPrfab/Mall-B3/Grid/Background 3/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400014: _MapPrfab/Mall-B3/Grid/Background 3/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/Mall-B3/Grid/Background 4/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400018: _MapPrfab/Mall-B3/Grid/Background 4/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/Mall-B3/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400022: _MapPrfab/Mall-B3/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400024: _MapPrfab/Mall-B3/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400026: _MapPrfab/Mall-B3/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400028: _MapPrfab/Mall-B3/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400030: _MapPrfab/Mall-B3/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400032: _MapPrfab/Mall-B3/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400034: _MapPrfab/Mall-B3/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400036: _MapPrfab/Mall-B3/Grid/Collision/Object_3/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400038: _MapPrfab/Mall-B3/Grid/Collision/Object_3/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400040: _MapPrfab/Mall-B3/Grid/Collision/Object_3/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400042: _MapPrfab/Mall-B3/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400044: _MapPrfab/Mall-B3/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400046: _MapPrfab/Mall-B3/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400048: _MapPrfab/Mall-B3/Grid/Collision/Object_8/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400050: _MapPrfab/Mall-B3/Grid/Collision/Object_8/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400052: _MapPrfab/Mall-B3/Grid/Collision/Object_8/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400054: _MapPrfab/Mall-B3/Grid/Collision/Object_10/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400056: _MapPrfab/Mall-B3/Grid/Collision/Object_10/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400058: _MapPrfab/Mall-B3/Grid/Collision/Object_10/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400060: _MapPrfab/Mall-B3/Grid/Collision/Object_12/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400062: _MapPrfab/Mall-B3/Grid/Collision/Object_12/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400064: _MapPrfab/Mall-B3/Grid/Collision/Object_12/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400066: _MapPrfab/Mall-B3/Grid/Collision/Object_14/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400068: _MapPrfab/Mall-B3/Grid/Collision/Object_14/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400070: _MapPrfab/Mall-B3/Grid/Collision/Object_14/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400072: _MapPrfab/Mall-B3/Grid/Collision/Object_15/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400074: _MapPrfab/Mall-B3/Grid/Collision/Object_15/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400076: _MapPrfab/Mall-B3/Grid/Collision/Object_15/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400078: _MapPrfab/Mall-B3/Grid/Collision/Object_16/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400080: _MapPrfab/Mall-B3/Grid/Collision/Object_16/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400082: _MapPrfab/Mall-B3/Grid/Collision/Object_16/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400084: _MapPrfab/Mall-B3/Grid/Collision/Object_18/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400086: _MapPrfab/Mall-B3/Grid/Collision/Object_18/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400088: _MapPrfab/Mall-B3/Grid/Collision/Object_18/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400090: _MapPrfab/Mall-B3/Grid/Collision/Object_27/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400092: _MapPrfab/Mall-B3/Grid/Collision/Object_27/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400094: _MapPrfab/Mall-B3/Grid/Collision/Object_27/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400096: _MapPrfab/Mall-B3/Grid/Collision/Object_28/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400098: _MapPrfab/Mall-B3/Grid/Collision/Object_28/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400100: _MapPrfab/Mall-B3/Grid/Collision/Object_28/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400102: _MapPrfab/Mall-B3/Grid/Collision/Object_30/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400104: _MapPrfab/Mall-B3/Grid/Collision/Object_30/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400106: _MapPrfab/Mall-B3/Grid/Collision/Object_30/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400108: _MapPrfab/Mall-B3/Grid/Collision/Object_31/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400110: _MapPrfab/Mall-B3/Grid/Collision/Object_31/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400112: _MapPrfab/Mall-B3/Grid/Collision/Object_31/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400114: _MapPrfab/Mall-B3/Grid/Collision/Object_32/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400116: _MapPrfab/Mall-B3/Grid/Collision/Object_32/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400118: _MapPrfab/Mall-B3/Grid/Collision/Object_32/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400120: _MapPrfab/Mall-B3/Grid/Collision/Object_33/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400122: _MapPrfab/Mall-B3/Grid/Collision/Object_33/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400124: _MapPrfab/Mall-B3/Grid/Collision/Object_33/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400126: _MapPrfab/Mall-B3/Grid/Collision/Object_34/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400128: _MapPrfab/Mall-B3/Grid/Collision/Object_34/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400130: _MapPrfab/Mall-B3/Grid/Collision/Object_34/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400132: _MapPrfab/Mall-B3/Grid/Collision/Object_35/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400134: _MapPrfab/Mall-B3/Grid/Collision/Object_35/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400136: _MapPrfab/Mall-B3/Grid/Collision/Object_35/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400138: _MapPrfab/Mall-B3/Grid/Collision/Object_43/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400140: _MapPrfab/Mall-B3/Grid/Collision/Object_43/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400142: _MapPrfab/Mall-B3/Grid/Collision/Object_43/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400144: _MapPrfab/Mall-B3/Grid/Collision/Object_44/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400146: _MapPrfab/Mall-B3/Grid/Collision/Object_44/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400148: _MapPrfab/Mall-B3/Grid/Collision/Object_44/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400150: _MapPrfab/Mall-B3/Grid/Collision/Object_45/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400152: _MapPrfab/Mall-B3/Grid/Collision/Object_45/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400154: _MapPrfab/Mall-B3/Grid/Collision/Object_45/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400156: _MapPrfab/Mall-B3/Grid/Collision/Object_46/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400158: _MapPrfab/Mall-B3/Grid/Collision/Object_46/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400160: _MapPrfab/Mall-B3/Grid/Collision/Object_46/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400162: _MapPrfab/Mall-B3/Grid/Collision/Object_47/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400164: _MapPrfab/Mall-B3/Grid/Collision/Object_47/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400166: _MapPrfab/Mall-B3/Grid/Collision/Object_47/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400168: _MapPrfab/Mall-B3/Grid/Collision/Object_48/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400170: _MapPrfab/Mall-B3/Grid/Collision/Object_48/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400172: _MapPrfab/Mall-B3/Grid/Collision/Object_48/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400174: _MapPrfab/Mall-B3/Grid/Collision/Object_49/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400176: _MapPrfab/Mall-B3/Grid/Collision/Object_49/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400178: _MapPrfab/Mall-B3/Grid/Collision/Object_49/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400180: _MapPrfab/Mall-B3/Grid/Collision/Object_50/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400182: _MapPrfab/Mall-B3/Grid/Collision/Object_50/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400184: _MapPrfab/Mall-B3/Grid/Collision/Object_50/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400186: _MapPrfab/Mall-B3/Grid/Collision/Object_51/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400188: _MapPrfab/Mall-B3/Grid/Collision/Object_51/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400190: _MapPrfab/Mall-B3/Grid/Collision/Object_51/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400192: _MapPrfab/Mall-B3/Grid/Collision/Object_53/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400194: _MapPrfab/Mall-B3/Grid/Collision/Object_53/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400196: _MapPrfab/Mall-B3/Grid/Collision/Object_53/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400198: _MapPrfab/Mall-B3/Grid/Collision/Object_54/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400200: _MapPrfab/Mall-B3/Grid/Collision/Object_54/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400202: _MapPrfab/Mall-B3/Grid/Collision/Object_54/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400204: _MapPrfab/Mall-B3/Grid/Collision/Object_55/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400206: _MapPrfab/Mall-B3/Grid/Collision/Object_55/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400208: _MapPrfab/Mall-B3/Grid/Collision/Object_55/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400210: _MapPrfab/Mall-B3/Grid/Collision/Object_56/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400212: _MapPrfab/Mall-B3/Grid/Collision/Object_56/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400214: _MapPrfab/Mall-B3/Grid/Collision/Object_56/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400216: _MapPrfab/Mall-B3/Grid/Collision/Object_57/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400218: _MapPrfab/Mall-B3/Grid/Collision/Object_57/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400220: _MapPrfab/Mall-B3/Grid/Collision/Object_57/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400222: _MapPrfab/Mall-B3/Grid/Collision/Object_59/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400224: _MapPrfab/Mall-B3/Grid/Collision/Object_59/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400226: _MapPrfab/Mall-B3/Grid/Collision/Object_59/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400228: _MapPrfab/Mall-B3/Grid/Collision/Object_62/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400230: _MapPrfab/Mall-B3/Grid/Collision/Object_62/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400232: _MapPrfab/Mall-B3/Grid/Collision/Object_62/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400234: _MapPrfab/Mall-B3/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400236: _MapPrfab/Mall-B3/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400238: _MapPrfab/Mall-B3/Grid/Floor 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400240: _MapPrfab/Mall-B3/Grid/Floor 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400242: _MapPrfab/Mall-B3/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400244: _MapPrfab/Mall-B3/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400246: _MapPrfab/Mall-B3/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400248: _MapPrfab/Mall-B3/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400250: _MapPrfab/Mall-B3/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400252: _MapPrfab/Mall-B3/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400254: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/Mall-B3/Grid/Grid
+    3664157343022684176: _MapPrfab/Mall-B3/Grid/Background/TilemapRenderer
+    3664157343022684178: _MapPrfab/Mall-B3/Grid/Background 2/TilemapRenderer
+    3664157343022684180: _MapPrfab/Mall-B3/Grid/Background 3/TilemapRenderer
+    3664157343022684182: _MapPrfab/Mall-B3/Grid/Background 4/TilemapRenderer
+    3664157343022684184: _MapPrfab/Mall-B3/Grid/Floor/TilemapRenderer
+    3664157343022684186: _MapPrfab/Mall-B3/Grid/Floor 2/TilemapRenderer
+    3664157343022684188: _MapPrfab/Mall-B3/Grid/Objects/TilemapRenderer
+    3664157343022684190: _MapPrfab/Mall-B3/Grid/Wall/TilemapRenderer
+    3664157343022684192: _MapPrfab/Mall-B3/Grid/Wall 2/TilemapRenderer
+    8195094279510102542: _MapPrfab/Mall-B3/Grid/Background/Tilemap
+    8195094279510102544: _MapPrfab/Mall-B3/Grid/Background 2/Tilemap
+    8195094279510102546: _MapPrfab/Mall-B3/Grid/Background 3/Tilemap
+    8195094279510102548: _MapPrfab/Mall-B3/Grid/Background 4/Tilemap
+    8195094279510102550: _MapPrfab/Mall-B3/Grid/Floor/Tilemap
+    8195094279510102552: _MapPrfab/Mall-B3/Grid/Floor 2/Tilemap
+    8195094279510102554: _MapPrfab/Mall-B3/Grid/Objects/Tilemap
+    8195094279510102556: _MapPrfab/Mall-B3/Grid/Wall/Tilemap
+    8195094279510102558: _MapPrfab/Mall-B3/Grid/Wall 2/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 1
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []

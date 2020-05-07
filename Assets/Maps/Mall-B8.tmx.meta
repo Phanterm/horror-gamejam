@@ -6,22 +6,30 @@ ScriptedImporter:
     100002: _MapPrfab/Mall-B8/Grid
     100004: _MapPrfab/Mall-B8/Grid/Collision
     100006: _MapPrfab/Mall-B8/Grid/Collision/Object_1
-    100008: _MapPrfab/Mall-B8/Grid/Collision/Object_6
-    100010: _MapPrfab/Mall-B8/Grid/Floor
-    100012: _MapPrfab/Mall-B8/Grid/Pillars
-    100014: _MapPrfab/Mall-B8/Grid/Shadows
-    100016: _MapPrfab/Mall-B8/Grid/Wall
+    100008: _MapPrfab/Mall-B8/Grid/Collision/Object_2
+    100010: _MapPrfab/Mall-B8/Grid/Collision/Object_3
+    100012: _MapPrfab/Mall-B8/Grid/Collision/Object_4
+    100014: _MapPrfab/Mall-B8/Grid/Floor
+    100016: _MapPrfab/Mall-B8/Grid/Objects
+    100018: _MapPrfab/Mall-B8/Grid/Shadows
+    100020: _MapPrfab/Mall-B8/Grid/Wall
+    100022: _MapPrfab/Mall-B8/Grid/Wall 2
     400000: _MapPrfab/Mall-B8/Transform
     400002: _MapPrfab/Mall-B8/Grid/Transform
     400004: _MapPrfab/Mall-B8/Grid/Collision/Transform
     400006: _MapPrfab/Mall-B8/Grid/Collision/Object_1/Transform
-    400008: _MapPrfab/Mall-B8/Grid/Collision/Object_6/Transform
-    400010: _MapPrfab/Mall-B8/Grid/Floor/Transform
-    400012: _MapPrfab/Mall-B8/Grid/Pillars/Transform
-    400014: _MapPrfab/Mall-B8/Grid/Shadows/Transform
-    400016: _MapPrfab/Mall-B8/Grid/Wall/Transform
+    400008: _MapPrfab/Mall-B8/Grid/Collision/Object_2/Transform
+    400010: _MapPrfab/Mall-B8/Grid/Collision/Object_3/Transform
+    400012: _MapPrfab/Mall-B8/Grid/Collision/Object_4/Transform
+    400014: _MapPrfab/Mall-B8/Grid/Floor/Transform
+    400016: _MapPrfab/Mall-B8/Grid/Objects/Transform
+    400018: _MapPrfab/Mall-B8/Grid/Shadows/Transform
+    400020: _MapPrfab/Mall-B8/Grid/Wall/Transform
+    400022: _MapPrfab/Mall-B8/Grid/Wall 2/Transform
     6100000: _MapPrfab/Mall-B8/Grid/Collision/Object_1/BoxCollider2D
-    6100002: _MapPrfab/Mall-B8/Grid/Collision/Object_6/BoxCollider2D
+    6100002: _MapPrfab/Mall-B8/Grid/Collision/Object_2/BoxCollider2D
+    6100004: _MapPrfab/Mall-B8/Grid/Collision/Object_3/BoxCollider2D
+    6100006: _MapPrfab/Mall-B8/Grid/Collision/Object_4/BoxCollider2D
     11400000: _MapPrfab/Mall-B8/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/Mall-B8/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/Mall-B8/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
@@ -29,28 +37,38 @@ ScriptedImporter:
     11400008: _MapPrfab/Mall-B8/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400010: _MapPrfab/Mall-B8/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400012: _MapPrfab/Mall-B8/Grid/Collision/Object_1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400014: _MapPrfab/Mall-B8/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400016: _MapPrfab/Mall-B8/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400018: _MapPrfab/Mall-B8/Grid/Collision/Object_6/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400020: _MapPrfab/Mall-B8/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400022: _MapPrfab/Mall-B8/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400024: _MapPrfab/Mall-B8/Grid/Pillars/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400026: _MapPrfab/Mall-B8/Grid/Pillars/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400028: _MapPrfab/Mall-B8/Grid/Shadows/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400030: _MapPrfab/Mall-B8/Grid/Shadows/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400032: _MapPrfab/Mall-B8/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400034: _MapPrfab/Mall-B8/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400036: _superAsset
+    11400014: _MapPrfab/Mall-B8/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400016: _MapPrfab/Mall-B8/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400018: _MapPrfab/Mall-B8/Grid/Collision/Object_2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/Mall-B8/Grid/Collision/Object_3/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400022: _MapPrfab/Mall-B8/Grid/Collision/Object_3/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400024: _MapPrfab/Mall-B8/Grid/Collision/Object_3/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400026: _MapPrfab/Mall-B8/Grid/Collision/Object_4/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400028: _MapPrfab/Mall-B8/Grid/Collision/Object_4/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400030: _MapPrfab/Mall-B8/Grid/Collision/Object_4/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400032: _MapPrfab/Mall-B8/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400034: _MapPrfab/Mall-B8/Grid/Floor/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400036: _MapPrfab/Mall-B8/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400038: _MapPrfab/Mall-B8/Grid/Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400040: _MapPrfab/Mall-B8/Grid/Shadows/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400042: _MapPrfab/Mall-B8/Grid/Shadows/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400044: _MapPrfab/Mall-B8/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400046: _MapPrfab/Mall-B8/Grid/Wall/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400048: _MapPrfab/Mall-B8/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400050: _MapPrfab/Mall-B8/Grid/Wall 2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400052: _superAsset
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/Mall-B8/Grid/Grid
     3664157343022684176: _MapPrfab/Mall-B8/Grid/Floor/TilemapRenderer
-    3664157343022684178: _MapPrfab/Mall-B8/Grid/Pillars/TilemapRenderer
+    3664157343022684178: _MapPrfab/Mall-B8/Grid/Objects/TilemapRenderer
     3664157343022684180: _MapPrfab/Mall-B8/Grid/Shadows/TilemapRenderer
     3664157343022684182: _MapPrfab/Mall-B8/Grid/Wall/TilemapRenderer
+    3664157343022684184: _MapPrfab/Mall-B8/Grid/Wall 2/TilemapRenderer
     8195094279510102542: _MapPrfab/Mall-B8/Grid/Floor/Tilemap
-    8195094279510102544: _MapPrfab/Mall-B8/Grid/Pillars/Tilemap
+    8195094279510102544: _MapPrfab/Mall-B8/Grid/Objects/Tilemap
     8195094279510102546: _MapPrfab/Mall-B8/Grid/Shadows/Tilemap
     8195094279510102548: _MapPrfab/Mall-B8/Grid/Wall/Tilemap
+    8195094279510102550: _MapPrfab/Mall-B8/Grid/Wall 2/Tilemap
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -67,7 +85,7 @@ ScriptedImporter:
   edgesPerEllipse: 32
   numberOfObjectsImported: 2
   tilesAsObjects: 0
-  sortingMode: 0
+  sortingMode: 1
   isIsometric: 0
   customImporterClassName: 
   internalTilesets: []
