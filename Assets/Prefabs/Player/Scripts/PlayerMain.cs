@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerMain : MonoBehaviour
 {
-
+    #region Components
+    [SerializeField]
+    private Animator _healthAnimator;
+    private AudioSource _audio;
+    private SpriteRenderer _spriteRenderer;
+    #endregion
     #region PlayerMovement
     public float walkSpeed;
     public float sprintSpeed;
@@ -14,55 +19,57 @@ public class PlayerMain : MonoBehaviour
     private Vector3 _change;
     private Animator _animator;
     #endregion
-
-    [SerializeField]
-    private Animator _healthAnimator;
-    private AudioSource _audio;
-    private SpriteRenderer _spriteRenderer;
-
-    //PlayerHealth
+    #region Player Health
     private float healthBar;
     public float health;
     protected float _currentHealth;
-
-    //StruggleEvents
+    #endregion
+    #region Struggle Interactions
     public int strugglePressed = 0;
     public bool inStruggleEvent = false;
-
-
-    //Player Inventory
+    #endregion
+    #region Player Inventory
     public InventoryObject inventory;
 
     public void OnTriggerEnter2D(Collider2D other) //When the player collides with an item they can pick up, add it to the inventory.
     {
         var item = other.GetComponent<Item>();
+        var audio = other.GetComponent<AudioSource>();
+        var renderer = other.GetComponent<SpriteRenderer>();
+        var collider = other.GetComponent<BoxCollider2D>();
         if (item)
         {
             inventory.AddItem(item.item, 1);
-            Destroy(other.gameObject);
+            audio.PlayOneShot(audio.clip, 1f);
+            renderer.enabled = !renderer.enabled;
+            collider.enabled = !collider.enabled;
+            Destroy(other.gameObject, 1.5f);
         }
     }
     private void OnApplicationQuit() //When we quit play, reset the inventory to empty.
     {
         inventory.Container.Clear();
     }
-
-    //Save Data
+    #endregion
+    #region Saving & Loading Data
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
+        inventory.SaveInventory();
     }
     public void LoadPlayer()
     {
         PlayerData data = SaveSystem.LoadPlayer();
+        inventory.LoadInventory();
 
         health = data.health;
-        Vector3 position;
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-        transform.position = position;
+        //Vector3 position;
+        //position.x = data.position[0]; //Not necessary, as the player always loads/saves in the same spot. We can populate this later.
+        //position.y = data.position[1];
+        //position.z = data.position[2];
+        //transform.position = position;
     }
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -81,6 +88,17 @@ public class PlayerMain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetButtonDown("Start"))
+        {
+            SavePlayer();
+            Debug.Log("Game Saved!");
+        }
+        if (Input.GetButtonDown("Select"))
+        {
+            LoadPlayer();
+            Debug.Log("Game Loaded!");
+        }
+
         if (!playerIsImmobile)
         {
             _change = Vector3.zero;
