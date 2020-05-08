@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\RoomMovement.cs" />
     <Compile Include="Assets\Scripts\RoomSettings.cs" />
     <Compile Include="Assets\Scripts\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\TimelineManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
