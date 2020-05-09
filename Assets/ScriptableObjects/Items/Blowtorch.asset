@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Blowtorch
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  prefab: {fileID: 0}
+  prefab: {fileID: 3778292315061828630, guid: d2952624cab88c4469d48e6601d5523c, type: 3}
   type: 1
   description: Industrial-grade blowtorch capable of melting through most metals.
     Has enough fuel for one more use.

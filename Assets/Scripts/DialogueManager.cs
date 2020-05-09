@@ -25,7 +25,6 @@ public class DialogueManager : MonoBehaviour
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
-            Debug.Log("hell");
         }
 
         DisplayNextSentence();
@@ -38,6 +37,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
+        Debug.Log("shit");
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -52,9 +52,8 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
     }
-    void EndDialogue()
+    public void EndDialogue()
     {
-        Debug.Log("End of conversation");
          animator.SetBool("IsOpen", false);
     }
         
