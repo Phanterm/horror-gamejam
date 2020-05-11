@@ -6,7 +6,6 @@ public class PlayerStruggle : MonoBehaviour
 {
     //Gets targets damage function
     public PlayerMain entity = null;
-    private GameObject Player;
     public AudioSource audioClip;
 
     public bool TriggeredByKeypress = false;
@@ -29,8 +28,9 @@ public class PlayerStruggle : MonoBehaviour
 
         if (TriggeredByKeypress == true && other.inStruggleEvent == false)
         {
-            if (Input.GetButtonDown("Action"))
+            if (Input.GetButtonDown("Action") && !other.CheckPlayerFrozen())
             {
+                other.FreezePlayer();
                 other.TakeDamageOverTime(1);
                 audioClip.Play();
             }
@@ -43,8 +43,9 @@ public class PlayerStruggle : MonoBehaviour
         PlayerMain other = entity.GetComponent<PlayerMain>();
         playerObject = other;
 
-        if (!TriggeredByKeypress && other.inStruggleEvent == false)
+        if (!TriggeredByKeypress && other.inStruggleEvent == false && !other.CheckPlayerFrozen())
         {
+            other.FreezePlayer();
             other.TakeDamageOverTime(1);
             audioClip.Play();
         }
@@ -55,7 +56,7 @@ public class PlayerStruggle : MonoBehaviour
         {
             audioClip.Stop();
             playerObject.inStruggleEvent = false;
-            playerObject.playerIsImmobile = false;
+            playerObject.UnfreezePlayer();
             playerObject.StopCoroutine("TakeDamageOverTimeCo");
             playerObject.strugglePressed = 0;
             playerObject = null;
