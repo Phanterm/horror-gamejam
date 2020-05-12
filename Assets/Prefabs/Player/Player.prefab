@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3999185299287252618}
   - component: {fileID: 3999185299287252619}
   - component: {fileID: 3999185299287252616}
+  - component: {fileID: 1072859723}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -455290433
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0ef3330c1c964ff4aa7a2a004e9444f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3999185299287252623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +160,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3999185299287252626}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 873e8387a8638a541a185b9d86dcf9de, type: 3}
@@ -273,13 +274,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3c034e1daf67441b55378de6be5c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.25
-  sprintSpeed: 0.5
-  playerIsImmobile: 0
-  _healthAnimator: {fileID: 0}
+  _healthAnimator: {fileID: 3999185299287252621}
+  walkSpeed: 0.5
+  sprintSpeed: 1
+  freezePlayer: 0
   health: 100
   strugglePressed: 0
   inStruggleEvent: 0
+  inventory: {fileID: 11400000, guid: 784be52b8e922414d934baa1802cf919, type: 2}
 --- !u!114 &3999185299287252616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,3 +298,18 @@ MonoBehaviour:
   sadImage: {fileID: 0}
   deathImage: {fileID: 0}
   health: 0
+--- !u!114 &1072859723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3999185299287252626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c895c4dfc1615f546a0db9865592bac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3999185299287252619}
+  animator: {fileID: 3999185299287252621}
+  levelLoader: {fileID: 0}
