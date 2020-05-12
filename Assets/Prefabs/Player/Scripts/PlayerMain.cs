@@ -14,7 +14,7 @@ public class PlayerMain : MonoBehaviour
     #region PlayerMovement
     public float walkSpeed;
     public float sprintSpeed;
-    public bool playerIsImmobile = false;
+    public bool freezePlayer = false;
     private Rigidbody2D _rigidBody;
     private Vector3 _change;
     private Animator _animator;
@@ -37,6 +37,7 @@ public class PlayerMain : MonoBehaviour
         var audio = other.GetComponent<AudioSource>();
         var renderer = other.GetComponent<SpriteRenderer>();
         var collider = other.GetComponent<BoxCollider2D>();
+
         if (item)
         {
             inventory.AddItem(item.item, 1);
@@ -71,6 +72,7 @@ public class PlayerMain : MonoBehaviour
     }
     #endregion
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,10 +87,30 @@ public class PlayerMain : MonoBehaviour
         _healthAnimator.SetFloat("healthReading", 100);
     }
 
+    public bool CheckPlayerFrozen()
+    {
+        return freezePlayer;
+    }
+
+    public void FreezePlayer()
+    {
+       _rigidBody.isKinematic = false;
+        //@TO-DO: Add a custom logic here to disable player inventory while frozen.
+        freezePlayer = true;
+    }
+
+    public void UnfreezePlayer()
+    {
+        _rigidBody.isKinematic = true;
+        //@TO-DO: Add a custom logic here to enable player inventory unfrozen.
+        freezePlayer = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Start"))
+
+        if (Input.GetButtonDown("Start")) //@TO-DO: Move this to the appropriate save point object.
         {
             SavePlayer();
             Debug.Log("Game Saved!");
@@ -99,7 +121,7 @@ public class PlayerMain : MonoBehaviour
             Debug.Log("Game Loaded!");
         }
 
-        if (!playerIsImmobile)
+        if (!CheckPlayerFrozen())
         {
             _change = Vector3.zero;
             _change.x = Input.GetAxisRaw("Horizontal");
@@ -118,8 +140,9 @@ public class PlayerMain : MonoBehaviour
         if (Input.GetButtonDown("Action") && inStruggleEvent == true)
         {
             strugglePressed++;
-            //Debug.Log(strugglePressed);
         }
+
+
     }
 
     void UpdateAnimationAndMove() //Sets values in our animator to animate our character accordingly.
@@ -174,23 +197,10 @@ public class PlayerMain : MonoBehaviour
         StartCoroutine(TakeDamageOverTimeCo(damageAmount));
     }
 
-    /*public IEnumerator TakeDamageOverTimeCo(int damageAmount, float duration)
-    {
-        float amountDamaged = 0;
-        float damagePerLoop = damageAmount / duration;
-        while (amountDamaged < damageAmount)
-        {
-            health -= damagePerLoop;
-            Debug.Log(health.ToString());
-            amountDamaged += damagePerLoop;
-            yield return new WaitForSeconds(5f);
-        }
-    }*/
-
     public IEnumerator TakeDamageOverTimeCo(int damageAmount)
     {
         inStruggleEvent = true;
-        playerIsImmobile = true;
+        FreezePlayer();
         while (strugglePressed < 25 && inStruggleEvent == true) //While the player has not yet pressed the struggle button enough times...
         {
             health -= damageAmount; //...take damage every loop in...

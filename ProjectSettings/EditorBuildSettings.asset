@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Mall.unity
+    guid: e7fde6f9c6031344dba705693a9da2c7
+  - enabled: 1
+    path: Assets/Scenes/Hospital.unity
+    guid: d92c587989bd58544932b2e4cc8afe61
   m_configObjects: {}
