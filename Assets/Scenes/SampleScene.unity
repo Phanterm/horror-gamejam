@@ -404,7 +404,7 @@ MonoBehaviour:
   _healthAnimator: {fileID: 0}
   walkSpeed: 0.25
   sprintSpeed: 0.5
-  playerIsImmobile: 0
+  freezePlayer: 0
   health: 100
   strugglePressed: 0
   inStruggleEvent: 0
@@ -1110,6 +1110,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 413939069394143600, guid: feb94b8aa7d5d354b9242893342b8baa,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1429447738}
+    - target: {fileID: 413939069394143600, guid: feb94b8aa7d5d354b9242893342b8baa,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1853928673}
+    - target: {fileID: 413939069394143600, guid: feb94b8aa7d5d354b9242893342b8baa,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1113395191}
     - target: {fileID: 413939069394143607, guid: feb94b8aa7d5d354b9242893342b8baa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1165,21 +1180,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 413939069394143600, guid: feb94b8aa7d5d354b9242893342b8baa,
-        type: 3}
-      propertyPath: nameText
-      value: 
-      objectReference: {fileID: 1429447738}
-    - target: {fileID: 413939069394143600, guid: feb94b8aa7d5d354b9242893342b8baa,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 1853928673}
-    - target: {fileID: 413939069394143600, guid: feb94b8aa7d5d354b9242893342b8baa,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1113395191}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb94b8aa7d5d354b9242893342b8baa, type: 3}
 --- !u!1001 &7623123398945140500
@@ -1319,5 +1319,11 @@ PrefabInstance:
       propertyPath: m_SubmitButton
       value: Select
       objectReference: {fileID: 0}
+    - target: {fileID: 7623123399985693040, guid: a20db93e722da134f9bb838415221c66,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e0b630f08b1e1f459c43f2fa32fd9be,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a20db93e722da134f9bb838415221c66, type: 3}
