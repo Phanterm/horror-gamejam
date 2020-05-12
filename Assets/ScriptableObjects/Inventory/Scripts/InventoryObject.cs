@@ -66,6 +66,7 @@ public class InventorySlot
 {
     public int ID;
     public ItemObject item;
+
     public int amount;
     public InventorySlot(int _id, ItemObject _item, int _amount)
     {
@@ -73,7 +74,6 @@ public class InventorySlot
         item = _item;
         amount = _amount;
     }
-
     public void AddAmount(int value)
     {
         amount += value;

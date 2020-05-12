@@ -87,10 +87,10 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Select
-    descriptiveName: Select button used to view notes and files.
+    descriptiveName: Button used to call up the menu/inventory screen
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: l
+    positiveButton: x
     altNegativeButton: 
     altPositiveButton: tab
     gravity: 1000
