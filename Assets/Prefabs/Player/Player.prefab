@@ -95,7 +95,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3999185299287252626}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
@@ -275,8 +275,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthAnimator: {fileID: 3999185299287252621}
-  walkSpeed: 0.5
-  sprintSpeed: 1
+  audioSource: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  walkSpeed: 0.4
+  sprintSpeed: 0.55
   freezePlayer: 0
   health: 100
   strugglePressed: 0

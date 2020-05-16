@@ -8,8 +8,8 @@ public class PlayerMain : MonoBehaviour
     #region Components
     [SerializeField]
     private Animator _healthAnimator;
-    private AudioSource _audio;
-    private SpriteRenderer _spriteRenderer;
+    public AudioSource audioSource;
+    public SpriteRenderer spriteRenderer;
     #endregion
     #region PlayerMovement
     public float walkSpeed;
@@ -78,8 +78,8 @@ public class PlayerMain : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _rigidBody = GetComponent<Rigidbody2D>();
-        _audio = GetComponent<AudioSource>();
-        _spriteRenderer = GetComponent <SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent <SpriteRenderer>();
 
         health = 100;
         _currentHealth = health;
@@ -94,7 +94,11 @@ public class PlayerMain : MonoBehaviour
 
     public void FreezePlayer()
     {
-       _rigidBody.isKinematic = false;
+        _animator.SetBool("walking", false);
+        _animator.SetBool("sprinting", false);
+        audioSource.volume = 0;
+        _change = Vector2.zero;
+        _rigidBody.isKinematic = false;
         //@TO-DO: Add a custom logic here to disable player inventory while frozen.
         freezePlayer = true;
     }
@@ -129,11 +133,11 @@ public class PlayerMain : MonoBehaviour
             UpdateAnimationAndMove();
             if (_change.x < 0)
             {
-                _spriteRenderer.flipX = true;
+                spriteRenderer.flipX = true;
             }
             else if (_change.x > 0)
             {
-                _spriteRenderer.flipX = false;
+                spriteRenderer.flipX = false;
             }
         }
 
@@ -149,8 +153,8 @@ public class PlayerMain : MonoBehaviour
     {
         if (_change != Vector3.zero)
         {
-            _audio.pitch = Random.Range(0.8f, 1f);
-            _audio.volume = 1;
+            audioSource.pitch = Random.Range(0.8f, 1f);
+            audioSource.volume = 1;
             MoveCharacter();
             _animator.SetFloat("moveX", _change.x);
             _animator.SetFloat("moveY", _change.y);
@@ -159,7 +163,7 @@ public class PlayerMain : MonoBehaviour
         {
             _animator.SetBool("walking", false);
             _animator.SetBool("sprinting", false);
-            _audio.volume = 0;
+            audioSource.volume = 0;
         }
     }
 

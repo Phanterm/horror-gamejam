@@ -12,7 +12,11 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextLevel()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1)); //References the build order index in Build Settings.
-        //SceneManager.LoadScene("Hospital"); If you were loading a specific scene.
+    }
+
+    public void LoadNameLevel(string levelName)
+    {
+        SceneManager.LoadScene(levelName); //If you were loading a specific scene.
     }
 
     IEnumerator LoadLevel(int levelIndex)
