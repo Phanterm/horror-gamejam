@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        Play("BGM");
+        //Play("BGM");
     }
 
     /*USAGE
