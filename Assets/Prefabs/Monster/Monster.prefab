@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &467690921748201101
 Transform:
   m_ObjectHideFlags: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
-  walkSpeed: 0.55
+  walkSpeed: 0.45
   audioManager: {fileID: 0}
   audioClip: {fileID: 3650041448889593078}
   TriggeredByKeypress: 0
