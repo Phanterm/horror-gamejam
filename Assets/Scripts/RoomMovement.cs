@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class RoomMovement : MonoBehaviour
 {
-    public Vector2 cameraShift;
-    public Vector3 playerShift;
     private CameraMovement cam;
-    public Transform teleportTarget;
+    public Transform playerDestination;
+    public RoomSettings roomSettings; //Holds the target room's data.
     
     // Start is called before the first frame update
     void Start()
@@ -26,10 +25,11 @@ public class RoomMovement : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Vector3 tempPosition = other.transform.position;
-            cam.MinPosition += cameraShift;
-            cam.MaxPosition += cameraShift;
-            tempPosition.x = teleportTarget.transform.position.x;
-            tempPosition.y = teleportTarget.transform.position.y;
+
+            cam.levelBounds = roomSettings.levelBounds;
+            
+            tempPosition.x = playerDestination.transform.position.x;
+            tempPosition.y = playerDestination.transform.position.y;
             tempPosition.z = 1;
 
             other.transform.position = tempPosition;

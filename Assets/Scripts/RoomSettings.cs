@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class RoomSettings : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Collider2D levelBounds;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
