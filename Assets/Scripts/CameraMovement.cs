@@ -27,29 +27,34 @@ public class CameraMovement : MonoBehaviour
 
     void AdjustCamera() //This function aligns the camera to the player, and prevents it from scrolling beyond the bounds we define.
     {
+        if (levelBounds == null) return;
         if (transform.position != target.position)
         {
-            Rect cameraRect = CalculateCameraRect();
+            Bounds cameraBounds = CalculateCameraBounds();
             Bounds mapBounds = GetMapColliderBounds();
-            Rect cameraMoveRect = new Rect( //Define the camera's total safe zone for a given map boundary, as defined by mapBounds.
-               mapBounds.center.x,
-               mapBounds.center.y,
-               mapBounds.size.x <= cameraRect.size.x ? 0f : mapBounds.size.x - cameraRect.size.x,
-               mapBounds.size.y <= cameraRect.size.y ? 0f : mapBounds.size.y - cameraRect.size.y
+
+            Bounds cameraMoveBounds = new Bounds( //Define the camera's total safe zone for a given map boundary, as defined by mapBounds.
+                mapBounds.center,
+                new Vector3(
+                    mapBounds.size.x <= cameraBounds.size.x ? 0f : mapBounds.size.x - cameraBounds.size.x,
+                    mapBounds.size.y <= cameraBounds.size.y ? 0f : mapBounds.size.y - cameraBounds.size.y,
+                    cameraBounds.size.z
+                )
             );
+
             transform.position = new Vector3( //Change the camera's position
-              Mathf.Clamp(target.position.x, cameraMoveRect.xMin, cameraMoveRect.xMax),
-              Mathf.Clamp(target.position.y, cameraMoveRect.yMin, cameraMoveRect.yMax),
+              Mathf.Clamp(target.position.x, cameraMoveBounds.min.x, cameraMoveBounds.max.x),
+              Mathf.Clamp(target.position.y, cameraMoveBounds.min.y, cameraMoveBounds.max.y),
               transform.position.z
             );
         }
     }
 
-    Rect CalculateCameraRect()
+    Bounds CalculateCameraBounds()
     {
         var bottomLeft = Camera.main.ScreenToWorldPoint(Vector3.zero);
         var topRight = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight));
-        return new Rect(bottomLeft.x, bottomLeft.y, topRight.x - bottomLeft.x, topRight.y - bottomLeft.y);
+        return new Bounds(topRight + bottomLeft / 2, topRight - bottomLeft);
     }
 
     Bounds GetMapColliderBounds()
