@@ -20,6 +20,8 @@ ScriptedImporter:
     100030: _MapPrfab/Mall-A2/Grid/Shadows
     100032: _MapPrfab/Mall-A2/Grid/Wall
     100034: _MapPrfab/Mall-A2/Grid/Windows
+    100036: _MapPrfab/Mall-A2/Grid/LevelBounds
+    100038: _MapPrfab/Mall-A2/Grid/LevelBounds/Object_12
     400000: _MapPrfab/Mall-A2/Transform
     400002: _MapPrfab/Mall-A2/Grid/Transform
     400004: _MapPrfab/Mall-A2/Grid/Collision/Transform
@@ -38,6 +40,8 @@ ScriptedImporter:
     400030: _MapPrfab/Mall-A2/Grid/Shadows/Transform
     400032: _MapPrfab/Mall-A2/Grid/Wall/Transform
     400034: _MapPrfab/Mall-A2/Grid/Windows/Transform
+    400036: _MapPrfab/Mall-A2/Grid/LevelBounds/Transform
+    400038: _MapPrfab/Mall-A2/Grid/LevelBounds/Object_12/Transform
     6100000: _MapPrfab/Mall-A2/Grid/Collision/Object_1/BoxCollider2D
     6100002: _MapPrfab/Mall-A2/Grid/Collision/Object_2/BoxCollider2D
     6100004: _MapPrfab/Mall-A2/Grid/Collision/Object_3/BoxCollider2D
@@ -48,6 +52,7 @@ ScriptedImporter:
     6100014: _MapPrfab/Mall-A2/Grid/Collision/Object_8/BoxCollider2D
     6100016: _MapPrfab/Mall-A2/Grid/Collision/Object_9/BoxCollider2D
     6100018: _MapPrfab/Mall-A2/Grid/Collision/Object_11/BoxCollider2D
+    6100020: _MapPrfab/Mall-A2/Grid/LevelBounds/Object_12/BoxCollider2D
     11400000: _MapPrfab/Mall-A2/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/Mall-A2/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/Mall-A2/Grid/Collision/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
@@ -93,6 +98,11 @@ ScriptedImporter:
     11400084: _MapPrfab/Mall-A2/Grid/Windows/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400086: _MapPrfab/Mall-A2/Grid/Windows/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400088: _superAsset
+    11400090: _MapPrfab/Mall-A2/Grid/LevelBounds/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400092: _MapPrfab/Mall-A2/Grid/LevelBounds/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400094: _MapPrfab/Mall-A2/Grid/LevelBounds/Object_12/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400096: _MapPrfab/Mall-A2/Grid/LevelBounds/Object_12/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400098: _MapPrfab/Mall-A2/Grid/LevelBounds/Object_12/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/Mall-A2/Grid/Grid
     3664157343022684176: _MapPrfab/Mall-A2/Grid/Floor/TilemapRenderer
