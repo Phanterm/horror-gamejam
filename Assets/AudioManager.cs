@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public string currentBGM;
 
     void Awake ()
     {
@@ -51,6 +52,31 @@ public class AudioManager : MonoBehaviour
         }
         
         s.source.Stop();
+    }
+
+    public void StopAll()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.isBGM)
+            {
+                s.source.Stop();
+            }
+        }
+    }
+
+    public void ChangeBGM(string songName)
+    {
+        foreach (Sound s in sounds)
+        {
+            if(s.isBGM)
+            {
+                s.source.Stop();
+            }
+
+            Play(songName);
+            currentBGM = songName;
+        }
     }
 
 }

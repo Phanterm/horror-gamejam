@@ -72,7 +72,17 @@ public class PlayerMain : MonoBehaviour
     }
     #endregion
 
-
+    public bool SearchInventoryByID(int id)
+    {
+        foreach(InventorySlot item in inventory.Container)
+        {
+            if(id == item.ID)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     // Start is called before the first frame update
     void Start()
     {
