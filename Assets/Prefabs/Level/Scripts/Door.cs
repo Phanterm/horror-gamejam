@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
     public int doorID;
     public AudioManager audioManager;
+    public string doorSFX;
 
     protected virtual void Start()
     {
@@ -21,8 +21,8 @@ public class Door : MonoBehaviour
     {
         if (id == this.doorID)
         {
-            audioManager.Play("SFX - Door Open");
-            spriteRenderer.enabled = !spriteRenderer.enabled;
+            audioManager.Play(doorSFX);
+            this.gameObject.SetActive(false);
         }
     }
 }

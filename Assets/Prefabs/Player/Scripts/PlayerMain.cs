@@ -10,6 +10,7 @@ public class PlayerMain : MonoBehaviour
     private Animator _healthAnimator;
     public AudioSource audioSource;
     public SpriteRenderer spriteRenderer;
+    private GameObject newPlayer;
     #endregion
     #region PlayerMovement
     public float walkSpeed;
@@ -30,6 +31,12 @@ public class PlayerMain : MonoBehaviour
     #endregion
     #region Player Inventory
     public InventoryObject inventory;
+
+    public void TriggerMonster()
+    {
+        //Cause the monster to appear.
+        Debug.Log("Boo");
+    }
 
     public void OnTriggerEnter2D(Collider2D other) //When the player collides with an item they can pick up, add it to the inventory.
     {
@@ -90,12 +97,35 @@ public class PlayerMain : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent <SpriteRenderer>();
+        newPlayer = this.gameObject;
 
         health = 100;
         _currentHealth = health;
         _healthAnimator.Play("HealthTree");
         _healthAnimator.SetFloat("healthReading", 100);
     }
+    
+  /*  public enum PlayerFacing
+    {
+        LEFT = 1,
+        RIGHT = 2,
+        UP = 3,
+        DOWN = 4,
+    }
+    public bool SetPlayerFacing(PlayerFacing facing)
+    {
+        switch (facing)
+        {
+            case LEFT:
+                return _change.x -= 1;
+            case RIGHT:
+                return _change.x += 1;
+            case UP:
+                return _change.y += 1;
+            case DOWN:
+                return _change.y -= 1;
+        }
+    }*/
 
     public bool CheckPlayerFrozen()
     {
@@ -108,14 +138,12 @@ public class PlayerMain : MonoBehaviour
         _animator.SetBool("sprinting", false);
         audioSource.volume = 0;
         _change = Vector2.zero;
-        _rigidBody.isKinematic = false;
         //@TO-DO: Add a custom logic here to disable player inventory while frozen.
         freezePlayer = true;
     }
 
     public void UnfreezePlayer()
     {
-        _rigidBody.isKinematic = true;
         //@TO-DO: Add a custom logic here to enable player inventory unfrozen.
         freezePlayer = false;
     }

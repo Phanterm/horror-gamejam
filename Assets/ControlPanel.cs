@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ControlPanel : MonoBehaviour
 {
+    [SerializeField]
+    private UnityEvent activated;
     public PlayerMain player;
     public int requiredItemID;
+    private bool eventFinished = false;
     /*
     NT_Shot = 0,
     Retrophone = 1,
@@ -32,13 +36,28 @@ public class ControlPanel : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("Action") && !eventFinished)
         {
-            if (player.SearchInventoryByID(requiredItemID))
-            {
-                EventManager.current.UnlockGate(1);
-            } 
+            Debug.Log("A strange power box with a round indentation on the front of the panel.");
+            ControlPanelActivate();
         }
+
+        else if (Input.GetButtonDown("Action"))
+        {
+            Debug.Log("Dialogue: It's on. You can hear electricity humming in the walls.");
+        }
+    }
+
+    private void ControlPanelActivate()
+    {
+        if (player.SearchInventoryByID(requiredItemID))
+        {
+            Debug.Log("The strange token fits perfectly into the round indentation, and you hear the mall come alive.");
+            activated.Invoke();
+            //EventManager.current.UnlockGate(1);
+        }
+
+        else Debug.Log("Dialogue: Nothing happened. Maybe it's missing something...");
     }
     
 }
