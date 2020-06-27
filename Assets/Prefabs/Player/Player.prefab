@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 3999185299287252617}
   - component: {fileID: 3999185299287252618}
   - component: {fileID: 3999185299287252619}
-  - component: {fileID: 3999185299287252616}
   - component: {fileID: 1072859723}
   m_Layer: 0
   m_Name: Player
@@ -284,22 +283,6 @@ MonoBehaviour:
   strugglePressed: 0
   inStruggleEvent: 0
   inventory: {fileID: 11400000, guid: 784be52b8e922414d934baa1802cf919, type: 2}
---- !u!114 &3999185299287252616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3999185299287252626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee2321662c2d894294ae5c030fc9f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthyImage: {fileID: 0}
-  sadImage: {fileID: 0}
-  deathImage: {fileID: 0}
-  health: 0
 --- !u!114 &1072859723
 MonoBehaviour:
   m_ObjectHideFlags: 0

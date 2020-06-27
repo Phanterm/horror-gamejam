@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaceb058aa73b54fa973172b0f729bd, type: 3}
   m_Name: Retrophone
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  prefab: {fileID: 0}
+  icon: {fileID: 21300024, guid: 4d693dadb36bec748a3bf7675dcef453, type: 3}
+  prefab: {fileID: 1857513393, guid: b7db5196d5b36354ca64b70e73271d24, type: 3}
   type: 1
-  description: A retro phone.
+  description: A RETRO PHONE.

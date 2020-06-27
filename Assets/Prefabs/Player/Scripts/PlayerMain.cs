@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PlayerMain : MonoBehaviour
 {
@@ -78,9 +79,6 @@ public class PlayerMain : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _rigidBody = GetComponent<Rigidbody2D>();
-        audioSource = GetComponent<AudioSource>();
-        spriteRenderer = GetComponent <SpriteRenderer>();
-
         health = 100;
         _currentHealth = health;
         _healthAnimator.Play("HealthTree");
@@ -94,11 +92,7 @@ public class PlayerMain : MonoBehaviour
 
     public void FreezePlayer()
     {
-        _animator.SetBool("walking", false);
-        _animator.SetBool("sprinting", false);
-        audioSource.volume = 0;
-        _change = Vector2.zero;
-        _rigidBody.isKinematic = false;
+       _rigidBody.isKinematic = false;
         //@TO-DO: Add a custom logic here to disable player inventory while frozen.
         freezePlayer = true;
     }

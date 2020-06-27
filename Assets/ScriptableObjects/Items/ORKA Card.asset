@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaceb058aa73b54fa973172b0f729bd, type: 3}
   m_Name: ORKA Card
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  prefab: {fileID: 0}
+  icon: {fileID: 21300016, guid: 4d693dadb36bec748a3bf7675dcef453, type: 3}
+  prefab: {fileID: 1149617317, guid: 6bdcc5cabade09d408ac473da6bee379, type: 3}
   type: 1
   description: An electronic metro card. This one's loaded with enough fare to get
     you from one end of the city to the other.
