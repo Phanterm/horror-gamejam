@@ -14,7 +14,6 @@ public class TimelineManager : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
-        player.FreezePlayer();
         anim = animator.runtimeAnimatorController;
         animator.runtimeAnimatorController = null;
     }
@@ -26,7 +25,6 @@ public class TimelineManager : MonoBehaviour
         {
             _fix = true;
             animator.runtimeAnimatorController = anim;
-            player.UnfreezePlayer();
         }
     }
 

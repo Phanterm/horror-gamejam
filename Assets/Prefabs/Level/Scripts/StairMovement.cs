@@ -43,10 +43,8 @@ public class StairMovement : RoomMovement
 
     public IEnumerator StairTransition()
     {
-        audioManager.StartCoroutine(audioManager.FadeIn(soundName, 0.5f)); //Fade in the transition SFX.
         yield return new WaitForSeconds(startDelay); //Any user-added delay before the fade out occurs.
         roomTransition.SetTrigger("MapFadeOut"); //Triggers the transition animation.
-        yield return new WaitForSeconds(transitionTime); //User-added delay after the transition itself. Useful for playing SFX in between rooms.
         Vector3 tempPosition = target.transform.position; //Define a new Vector3 for later.
             cam.levelBounds = roomSettings.levelBounds; //Apply the new camera bounds for the destination map.
 
@@ -55,6 +53,8 @@ public class StairMovement : RoomMovement
             tempPosition.z = 1;
 
             target.transform.position = tempPosition; //Teleport the player to the target destination with our new coordinates.
+        audioManager.StartCoroutine(audioManager.FadeIn(soundName, 0.5f)); //Fade in the transition SFX.
+        yield return new WaitForSeconds(transitionTime); //User-added delay after the transition itself. Useful for playing SFX in between rooms.
         audioManager.StartCoroutine(audioManager.FadeOut(soundName, 0.5f)); //Fade out the transition SFX.
         roomTransition.SetTrigger("MapFadeIn"); //Triggers the fade in transition animation.
         deactivated.Invoke(); //Invoke events such as unfreezing the player.
