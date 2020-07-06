@@ -18,7 +18,7 @@ public class PlayerMain : MonoBehaviour
     public bool freezePlayer = false;
     private Rigidbody2D _rigidBody;
     private Vector3 _change;
-    private Animator _animator;
+    public Animator animator;
     #endregion
     #region Player Health
     private float healthBar;
@@ -93,7 +93,7 @@ public class PlayerMain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         _rigidBody = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent <SpriteRenderer>();
@@ -134,8 +134,8 @@ public class PlayerMain : MonoBehaviour
 
     public void FreezePlayer()
     {
-        _animator.SetBool("walking", false);
-        _animator.SetBool("sprinting", false);
+        animator.SetBool("walking", false);
+        animator.SetBool("sprinting", false);
         audioSource.volume = 0;
         _change = Vector2.zero;
         //@TO-DO: Add a custom logic here to disable player inventory while frozen.
@@ -194,13 +194,13 @@ public class PlayerMain : MonoBehaviour
             audioSource.pitch = Random.Range(0.8f, 1f);
             audioSource.volume = 1;
             MoveCharacter();
-            _animator.SetFloat("moveX", _change.x);
-            _animator.SetFloat("moveY", _change.y);
+            animator.SetFloat("moveX", _change.x);
+            animator.SetFloat("moveY", _change.y);
         }
         else
         {
-            _animator.SetBool("walking", false);
-            _animator.SetBool("sprinting", false);
+            animator.SetBool("walking", false);
+            animator.SetBool("sprinting", false);
             audioSource.volume = 0;
         }
     }
@@ -209,15 +209,15 @@ public class PlayerMain : MonoBehaviour
     {
         if (Input.GetButton("Action"))
         {
-            _animator.SetBool("walking", false);
-            _animator.SetBool("sprinting", true);
+            animator.SetBool("walking", false);
+            animator.SetBool("sprinting", true);
             _rigidBody.MovePosition(
             transform.position + _change * sprintSpeed * Time.deltaTime);
         }
         else
         {
-            _animator.SetBool("walking", true);
-            _animator.SetBool("sprinting", false);
+            animator.SetBool("walking", true);
+            animator.SetBool("sprinting", false);
             _rigidBody.MovePosition(
             transform.position + _change * walkSpeed * Time.deltaTime);
         }

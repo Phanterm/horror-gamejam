@@ -23,7 +23,16 @@ public class TimelineManager : MonoBehaviour
     {
         if(director.state != PlayState.Playing && !_fix)
         {
+            _fix = true;
             animator.runtimeAnimatorController = anim;
         }
+    }
+
+    public void RecedeAnimator()
+    {
+        player.animator.runtimeAnimatorController = anim;
+        director.ClearGenericBinding(this.gameObject);
+        animator.runtimeAnimatorController = null;
+        animator.runtimeAnimatorController = anim;
     }
 }
