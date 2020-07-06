@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5528611029414437395}
   - component: {fileID: 6600387744518238590}
-  - component: {fileID: 6600387744518238589}
+  - component: {fileID: 694422893890001716}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -89,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.009999998, y: 0.6305912}
   m_EdgeRadius: 0
---- !u!114 &6600387744518238589
+--- !u!114 &694422893890001716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,8 +98,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 6600387744518238584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d411bdb5191a1a4e96bfc5757963f82, type: 3}
+  m_Script: {fileID: 11500000, guid: 388a73640caa0604fac1b6cf6902e6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   playerDestination: {fileID: 4304024008555757222}
   roomSettings: {fileID: 0}
+=======
+  roomTransition: {fileID: 0}
+  playerDestination: {fileID: 0}
+  roomSettings: {fileID: 0}
+  transitionTime: 1
+  teleportOnPress: 0
+  audioManager: {fileID: 0}
+  activated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+>>>>>>> Stashed changes
