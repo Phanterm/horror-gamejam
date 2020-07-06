@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Mall.unity
+=======
+- path: Assets/Scenes/Train.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
