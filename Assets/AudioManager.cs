@@ -1,10 +1,13 @@
 ﻿using UnityEngine.Audio;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public string currentBGM;
 
     void Awake ()
     {
@@ -53,4 +56,60 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
 
+    public void StopAll()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.isBGM)
+            {
+                s.source.Stop();
+            }
+        }
+    }
+
+    public void ChangeBGM(string songName)
+    {
+        foreach (Sound s in sounds)
+        {
+            if(s.isBGM)
+            {
+                s.source.Stop();
+            }
+
+            Play(songName);
+            currentBGM = songName;
+        }
+    }
+
+    public IEnumerator FadeOut(string name, float FadeTime)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+        }
+        float startVolume = s.source.volume;
+        while (s.source.volume > 0)
+        {
+            s.source.volume -= startVolume * Time.deltaTime / FadeTime;
+            yield return null;
+        }
+        s.source.Stop();
+    }
+
+    public IEnumerator FadeIn(string name, float FadeTime)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+        }
+        s.source.Play();
+        s.source.volume = 0f;
+        while (s.source.volume < 1)
+        {
+            s.source.volume += Time.deltaTime / FadeTime;
+            yield return null;
+        }
+    }
 }

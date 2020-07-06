@@ -1,5 +1,8 @@
 
 Temp/UnityLockfile
+*.meta
+Library/*
+Temp/*
 .vs/horror-gamejam/v15/Server/sqlite3/storage.ide-wal
 .vs/horror-gamejam/v15/Server/sqlite3/storage.ide-shm
 .vs/horror-gamejam/v15/Server/sqlite3/storage.ide
