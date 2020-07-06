@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &724565293694141163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724565293694141161}
+  - component: {fileID: 724565293694141162}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724565293694141161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724565293694141163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2853153, y: 4.8939095, z: 0.012351538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &724565293694141162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724565293694141163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac53027ae19c07540ab737ac7c29351f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BGM-Chase
+    clip: {fileID: 8300000, guid: 9bdafbd4fe9520b489042e50993c6dcb, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: VrDisconnect
+    clip: {fileID: 8300000, guid: 92aac1776d8a4c44b8aea61901a356ed, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: VrExit
+    clip: {fileID: 8300000, guid: 2cf7a5e0bf3b2314da6956785600574f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: StruggleSFX
+    clip: {fileID: 8300000, guid: d4825bf473a50e145852467248fc161f, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: BGM-Bubbles
+    clip: {fileID: 8300000, guid: af5724b0d5abed945867aef1e839dc89, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 1
+    isBGM: 1
+    source: {fileID: 0}
+  - name: BGM-Mall-Main
+    clip: {fileID: 8300000, guid: ef6125b481ddc494688c5edf0e08a62e, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 1
+    isBGM: 1
+    source: {fileID: 0}
+  - name: SFX-Scramble
+    clip: {fileID: 8300000, guid: ce6d7fcc5599c004589843788a02be71, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: BGM-Mall-Outlet1
+    clip: {fileID: 8300000, guid: df405090d2b8cc641bc6b7b27fd3c3e1, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 1
+    isBGM: 1
+    source: {fileID: 0}
+  - name: SFX-Escalator
+    clip: {fileID: 8300000, guid: 9600d43db28dac94394636fc969fbe0e, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: BGM-Ambience
+    clip: {fileID: 8300000, guid: 0a3204dd72abf034990296cc00a1f5f6, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 1
+    isBGM: 1
+    source: {fileID: 0}
+  - name: SFX-Slam
+    clip: {fileID: 8300000, guid: ac6e862fc68995d42a8512bd13a55b82, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Door-Pressurized
+    clip: {fileID: 8300000, guid: b60550dc00ae24a42b3e9ac316d694d5, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Door-Automatic
+    clip: {fileID: 8300000, guid: 3d05d3750b9add34e913d672cde8ae75, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Steam
+    clip: {fileID: 8300000, guid: bc49fdb6e7bd7bb4eafaa649f1f9dc5f, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Machinery
+    clip: {fileID: 8300000, guid: 2067f9b4ba96a3746aa9f21dbd7a3194, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Steam
+    clip: {fileID: 8300000, guid: bc49fdb6e7bd7bb4eafaa649f1f9dc5f, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Locker-Open
+    clip: {fileID: 8300000, guid: b59e45f8fd4c3714f8dde58d496c16a8, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Locker-Close
+    clip: {fileID: 8300000, guid: b8edf5bf830c51e48a13a55fa52ca8db, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Power-Outage
+    clip: {fileID: 8300000, guid: db229cd20bc0f8144a47642ccdcbcb7f, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Tech-Loop-A
+    clip: {fileID: 8300000, guid: f07af8290f040f9409391c0ab7873da7, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 1
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Tech-Loop-B
+    clip: {fileID: 8300000, guid: f515e62be038e5c4bb9e6b1d6679f00b, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 1
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Save
+    clip: {fileID: 8300000, guid: 87a2ded42277ebe4ebf8a97e3b58d939, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Power-Outage
+    clip: {fileID: 8300000, guid: db229cd20bc0f8144a47642ccdcbcb7f, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: BGM-Train-Outside
+    clip: {fileID: 8300000, guid: cf5f0b5112311a04aaa1c015936f8a75, type: 3}
+    volume: 0.59
+    pitch: 1
+    loop: 1
+    isBGM: 1
+    source: {fileID: 0}
+  - name: SFX-Break
+    clip: {fileID: 8300000, guid: a1c286148e1e22a409fe95024d87584b, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  - name: SFX-Footstep
+    clip: {fileID: 8300000, guid: 873e8387a8638a541a185b9d86dcf9de, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    isBGM: 0
+    source: {fileID: 0}
+  currentBGM: 
